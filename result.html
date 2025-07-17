@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results | PU-SJC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1a365d",
+              secondary: "#2c5282",
+              accent: "#4299e1",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+<header class="bg-primary text-white shadow-md sticky top-0 z-[99999]">
+      <div class="container mx-auto px-4">
+        <!-- Top Bar (Logo + Institutions) -->
+
+        <!-- Navigation -->
+        <nav class="flex justify-between items-center py-7 gap-3">
+          <!-- Desktop Menu -->
+          <div>
+            <div class="flex gap-3 items-center">
+              <div class="hidden lg:flex justify-center items-center gap-2">
+                <p class="hidden lg:block font-bold xl:text-xl ">Society of St. Joseph's Colllege</p>
+                <img
+                  src="./assets/sjc logo.png"
+                  alt="sjc logo"
+                  class="w-[40px] h-[50px]"
+                />
+              </div>
+              <div class="block lg:hidden">
+                <img src="./assets/pu.png" alt="pu logo" class="w-[50px]" />
+              </div>
+            </div>
+          </div>
+          <div class="hidden lg:flex space-x-6">
+            <a
+              href="index.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >About</a
+            >
+            <a
+              href="./academics.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Academics</a
+            >
+            <a
+              href="admissions.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Admissions</a
+            >
+            <a
+              href="gallery.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Gallery</a
+            >
+
+            <a
+              href="announcement.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Announcement</a
+            >
+            <a
+              href="result.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Results</a
+            >
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-button"
+            class="lg:hidden text-xl focus:outline-none"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- Apply Now Button (Desktop) -->
+          <div class="hidden lg:flex justify-center items-center gap-2">
+            <p class="font-bold xl:text-xl">Pondicherry University</p>
+            <img
+              src="./assets/pu.png"
+              alt="pu logo "
+              class="w-[50px] h-[50px]"
+            />
+          </div>
+        </nav>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-blue-900 pb-4">
+          <div class="flex flex-col space-y-3 px-4">
+            <a
+              href="index.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >About</a
+            >
+            <a
+              href="./academics.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Academics</a
+            >
+            <a
+              href="admissions.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Admissions</a
+            >
+            <a
+              href="gallery.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Gallery</a
+            >
+
+            <a
+              href="announcement.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Announcement</a
+            >
+            <a
+              href="result.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Results</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0">
+            <p>&copy; 2024 MBA Twinning Program. All rights reserved.</p>
+          </div>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-300 hover:text-white transition"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-gray-300 hover:text-white transition"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="text-gray-300 hover:text-white transition"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>

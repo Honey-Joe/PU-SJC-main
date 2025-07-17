@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academics | PU-SJC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1a365d",
+              secondary: "#2c5282",
+              accent: "#4299e1",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+     <header class="bg-primary text-white shadow-md sticky top-0 z-[99999]">
+      <div class="container mx-auto px-4">
+        <!-- Top Bar (Logo + Institutions) -->
+
+        <!-- Navigation -->
+        <nav class="flex justify-between items-center py-7 gap-3">
+          <!-- Desktop Menu -->
+          <div>
+            <div class="flex gap-3 items-center">
+              <div class="hidden lg:flex justify-center items-center gap-2">
+                <p class="hidden lg:block font-bold xl:text-xl ">Society of St. Joseph's Colllege</p>
+                <img
+                  src="./assets/sjc logo.png"
+                  alt="sjc logo"
+                  class="w-[40px] h-[50px]"
+                />
+              </div>
+              <div class="block lg:hidden">
+                <img src="./assets/pu.png" alt="pu logo" class="w-[50px]" />
+              </div>
+            </div>
+          </div>
+          <div class="hidden lg:flex space-x-6">
+            <a
+              href="index.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >About</a
+            >
+            <a
+              href="./academics.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Academics</a
+            >
+            <a
+              href="admissions.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Admissions</a
+            >
+            <a
+              href="gallery.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Gallery</a
+            >
+
+            <a
+              href="announcement.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Announcement</a
+            >
+            <a
+              href="result.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Results</a
+            >
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-button"
+            class="lg:hidden text-xl focus:outline-none"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- Apply Now Button (Desktop) -->
+          <div class="hidden lg:flex justify-center items-center gap-2">
+            <p class="font-bold xl:text-xl">Pondicherry University</p>
+            <img
+              src="./assets/pu.png"
+              alt="pu logo "
+              class="w-[50px] h-[50px]"
+            />
+          </div>
+        </nav>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-blue-900 pb-4">
+          <div class="flex flex-col space-y-3 px-4">
+            <a
+              href="index.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >About</a
+            >
+            <a
+              href="./academics.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Academics</a
+            >
+            <a
+              href="admissions.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Admissions</a
+            >
+            <a
+              href="gallery.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Gallery</a
+            >
+
+            <a
+              href="announcement.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Announcement</a
+            >
+            <a
+              href="result.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Results</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section for Academics Page -->
+    <section
+      class="relative bg-gradient-to-br from-primary to-secondary text-white overflow-hidden"
+    >
+      <!-- Decorative Elements -->
+      <div class="absolute top-0 right-0 opacity-20">
+        <svg
+          width="300"
+          height="300"
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="#4299E1"
+            d="M45,-78.9C58.1,-71.3,68.5,-59.3,75.7,-45.4C82.9,-31.5,86.9,-15.7,87.8,0.6C88.7,17,86.5,33.9,76.8,46.5C67.1,59,50,67.1,32.9,73.1C15.7,79.1,-1.5,82.9,-16.1,78.5C-30.7,74.1,-42.7,61.4,-53.9,48.9C-65.1,36.4,-75.5,24,-80.1,9.3C-84.7,-5.4,-83.5,-22.5,-75.1,-35.8C-66.7,-49.1,-51.1,-58.7,-35.8,-65.5C-20.5,-72.3,-5.4,-76.4,9.1,-80.2C23.6,-84,47.2,-87.5,45,-78.9Z"
+            transform="translate(100 100)"
+          />
+        </svg>
+      </div>
+
+      <div class="container mx-auto px-4 py-24 md:py-32 relative z-10">
+        <div class="max-w-3xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            Academic <span class="text-accent">Excellence</span> with
+            Specializations
+          </h1>
+          <p class="text-xl text-blue-100 mb-8">
+            Our MBA Twinning Program combines core business fundamentals with
+            cutting-edge specialization tracks, delivered through St. Joseph's
+            industry-aligned pedagogy and Pondicherry University's research
+            expertise.
+          </p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a
+              href="#specializations"
+              class="bg-accent hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition shadow-lg"
+            >
+              Explore Specializations
+            </a>
+            <a
+              href="#syllabus"
+              class="bg-white hover:bg-gray-100 text-primary px-6 py-3 rounded-lg font-semibold transition shadow-lg"
+            >
+              View Full Syllabus
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specializations Section -->
+    <section id="specializations" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-primary mb-4">
+            Specialization Tracks
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Choose your path with dual-certification in these high-demand
+            domains
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Specialization 1 -->
+          <div
+            class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300 border-l-4 border-accent"
+          >
+            <div class="p-6">
+              <div
+                class="bg-accent/10 text-accent rounded-full w-14 h-14 flex items-center justify-center mb-4"
+              >
+                <i class="fas fa-chart-line text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-primary mb-3">
+                Master of Business Administration in Marketing
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start">
+                  <span class="text-accent mr-2 mt-1">•</span>
+                  <span>Financial Risk Management</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-accent mr-2 mt-1">•</span>
+                  <span>Business Intelligence</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-accent mr-2 mt-1">•</span>
+                  <span>Investment Banking</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Specialization 2 -->
+          <div
+            class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300 border-l-4 border-accent"
+          >
+            <div class="p-6">
+              <div
+                class="bg-accent/10 text-accent rounded-full w-14 h-14 flex items-center justify-center mb-4"
+              >
+                <i class="fas fa-globe-asia text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-primary mb-3">
+                Master of Business Administration in Finance
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start">
+                  <span class="text-accent mr-2 mt-1">•</span>
+                  <span>Global Supply Chain</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-accent mr-2 mt-1">•</span>
+                  <span>Cross-Cultural Management</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-accent mr-2 mt-1">•</span>
+                  <span>Trade Policies</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Specialization 3 -->
+          <div
+            class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300 border-l-4 border-accent"
+          >
+            <div class="p-6">
+              <div
+                class="bg-accent/10 text-accent rounded-full w-14 h-14 flex items-center justify-center mb-4"
+              >
+                <i class="fas fa-robot text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-primary mb-3">
+                Master of Business Administration in International Business
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start">
+                  <span class="text-accent mr-2 mt-1">•</span>
+                  <span>AI in Business</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-accent mr-2 mt-1">•</span>
+                  <span>Blockchain Applications</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-accent mr-2 mt-1">•</span>
+                  <span>Digital Marketing Strategy</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300 border-l-4 border-accent"
+          >
+            <div class="p-6">
+              <div
+                class="bg-accent/10 text-accent rounded-full w-14 h-14 flex items-center justify-center mb-4"
+              >
+                <i class="fas fa-robot text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-primary mb-3">
+                Master of Business Administration in Human Resource Management
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start">
+                  <span class="text-accent mr-2 mt-1">•</span>
+                  <span>AI in Business</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-accent mr-2 mt-1">•</span>
+                  <span>Blockchain Applications</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-accent mr-2 mt-1">•</span>
+                  <span>Digital Marketing Strategy</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300 border-l-4 border-accent"
+          >
+            <div class="p-6">
+              <div
+                class="bg-accent/10 text-accent rounded-full w-14 h-14 flex items-center justify-center mb-4"
+              >
+                <i class="fas fa-robot text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-primary mb-3">
+                Master of Business Administration in General
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start">
+                  <span class="text-accent mr-2 mt-1">•</span>
+                  <span>AI in Business</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-accent mr-2 mt-1">•</span>
+                  <span>Blockchain Applications</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-accent mr-2 mt-1">•</span>
+                  <span>Digital Marketing Strategy</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300 border-l-4 border-accent"
+          >
+            <div class="p-6">
+              <div
+                class="bg-accent/10 text-accent rounded-full w-14 h-14 flex items-center justify-center mb-4"
+              >
+                <i class="fas fa-robot text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-primary mb-3">
+                Master of Business Administration in Operations and Supply Chain
+                Management
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start">
+                  <span class="text-accent mr-2 mt-1">•</span>
+                  <span>AI in Business</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-accent mr-2 mt-1">•</span>
+                  <span>Blockchain Applications</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-accent mr-2 mt-1">•</span>
+                  <span>Digital Marketing Strategy</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Syllabus & Materials Section with PDF Downloads -->
+    <section id="syllabus" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-primary mb-4">
+            Program Syllabus & Materials
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Download detailed course outlines and study resources
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md overflow-hidden max-w-4xl mx-auto mb-12">
+  <!-- Tab Navigation -->
+  <div class="border-b border-gray-200">
+    
+  </div>
+
+  <!-- Tab Content Container -->
+  <div class="p-6">
+    <!-- Marketing Content -->
+    <div class="syllabus-content active" id="marketing-content">
+      <div class="space-y-4">
+        <!-- Course 1 -->
+        <div class="flex flex-col sm:flex-row justify-between  items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+          <div class="mb-3 sm:mb-0">
+            <h4 class="font-medium text-primary">Master of Business Administration in Marketing</h4>
+          </div>
+          <div class="flex space-x-2">
+            <a href="./assets/pdfs/Syllabus2023Onwards-MBA-Marketing.pdf" download class="bg-white hover:bg-gray-100 text-primary border border-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
+              <i class="fas fa-file-pdf mr-2 text-red-500"></i> Syllabus
+            </a>
+            <a href="/pdfs/marketing-materials.zip" download class="bg-accent hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
+              <i class="fas fa-download mr-2"></i> Materials
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-between  items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+          <div class="mb-3 sm:mb-0">
+            <h4 class="font-medium text-primary">Master of Business Administration in Finance</h4>
+          </div>
+          <div class="flex space-x-2">
+            <a href="./assets/pdfs/Syllabus2023Onwards-MBA-Finance.pdf" download class="bg-white hover:bg-gray-100 text-primary border border-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
+              <i class="fas fa-file-pdf mr-2 text-red-500"></i> Syllabus
+            </a>
+            <a href="/pdfs/marketing-materials.zip" download class="bg-accent hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
+              <i class="fas fa-download mr-2"></i> Materials
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-between  items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+          <div class="mb-3 sm:mb-0">
+            <h4 class="font-medium text-primary">Master of Business Administration in International Business</h4>
+          </div>
+          <div class="flex space-x-2">
+            <a href="./assets/pdfs/Syllabus2023Onwards-MBA-IB.pdf" download class="bg-white hover:bg-gray-100 text-primary border border-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
+              <i class="fas fa-file-pdf mr-2 text-red-500"></i> Syllabus
+            </a>
+            <a href="/pdfs/marketing-materials.zip" download class="bg-accent hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
+              <i class="fas fa-download mr-2"></i> Materials
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-between  items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+          <div class="mb-3 sm:mb-0">
+            <h4 class="font-medium text-primary">Master of Business Administration in Human Resource Management</h4>
+          </div>
+          <div class="flex space-x-2">
+            <a href="./assets/pdfs/Syllabus2023Onwards-MBA-HRM.pdf" download class="bg-white hover:bg-gray-100 text-primary border border-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
+              <i class="fas fa-file-pdf mr-2 text-red-500"></i> Syllabus
+            </a>
+            <a href="/pdfs/marketing-materials.zip" download class="bg-accent hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
+              <i class="fas fa-download mr-2"></i> Materials
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-between  items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+          <div class="mb-3 sm:mb-0">
+            <h4 class="font-medium text-primary">Master of Business Administration in Marketing</h4>
+          </div>
+          <div class="flex space-x-2">
+            <a href="./assets/pdfs/Syllabus2023Onwards-MBA-Marketing.pdf" download class="bg-white hover:bg-gray-100 text-primary border border-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
+              <i class="fas fa-file-pdf mr-2 text-red-500"></i> Syllabus
+            </a>
+            <a href="/pdfs/marketing-materials.zip" download class="bg-accent hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
+              <i class="fas fa-download mr-2"></i> Materials
+            </a>
+          </div>
+        </div>
+
+
+        <div class="flex flex-col sm:flex-row justify-between  items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+          <div class="mb-3 sm:mb-0">
+            <h4 class="font-medium text-primary">Master of Business Administration in General   </h4>
+          </div>
+          <div class="flex space-x-2">
+            <a href="./assets/pdfs/Syllabus2023Onwards-MBA-General.pdf" download class="bg-white hover:bg-gray-100 text-primary border border-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
+              <i class="fas fa-file-pdf mr-2 text-red-500"></i> Syllabus
+            </a>
+            <a href="/pdfs/marketing-materials.zip" download class="bg-accent hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
+              <i class="fas fa-download mr-2"></i> Materials
+            </a>
+          </div>
+        </div>
+
+         <div class="flex flex-col sm:flex-row justify-between  items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+          <div class="mb-3 sm:mb-0">
+            <h4 class="font-medium text-primary">Master of Business Administration in Operations and Supply Chain Management </h4>
+          </div>
+          <div class="flex space-x-2">
+            <a href="./assets/pdfs/Syllabus2023Onwards-MBA-OSCM.pdf" download class="bg-white hover:bg-gray-100 text-primary border border-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
+              <i class="fas fa-file-pdf mr-2 text-red-500"></i> Syllabus
+            </a>
+            <a href="/pdfs/marketing-materials.zip" download class="bg-accent hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
+              <i class="fas fa-download mr-2"></i> Materials
+            </a>
+          </div>
+        </div>
+        
+        <!-- Course 2 -->
+        
+      </div>
+    </div>
+
+   
+  </div>
+</div>
+
+
+        <!-- Materials Library -->
+        <div
+          class="bg-white rounded-xl shadow-md overflow-hidden max-w-4xl mx-auto"
+        >
+          <div class="p-6 border-b border-gray-200">
+            <h3 class="text-xl font-semibold text-secondary mb-6">
+              Study Resources Library
+            </h3>
+            <div class="grid md:grid-cols-2 gap-4">
+              <!-- Resource 1 -->
+              <div
+                class="flex justify-between items-center p-4 bg-gray-50 rounded-lg border border-gray-200"
+              >
+                <div>
+                  <h4 class="font-medium text-primary">Case Study Handbook</h4>
+                  <p class="text-sm text-gray-600">
+                    2024 Edition (Compiled by Faculty)
+                  </p>
+                </div>
+                <a
+                  href="/pdfs/case-study-handbook.pdf"
+                  download
+                  class="bg-accent hover:bg-blue-600 text-white px-3 py-1 rounded-lg text-sm font-semibold flex items-center transition"
+                >
+                  <i class="fas fa-download mr-2"></i> PDF
+                </a>
+              </div>
+
+              <!-- Resource 2 -->
+              <div
+                class="flex justify-between items-center p-4 bg-gray-50 rounded-lg border border-gray-200"
+              >
+                <div>
+                  <h4 class="font-medium text-primary">
+                    Research Methodology Guide
+                  </h4>
+                  <p class="text-sm text-gray-600">PU Approved Templates</p>
+                </div>
+                <a
+                  href="/pdfs/research-methodology.zip"
+                  download
+                  class="bg-accent hover:bg-blue-600 text-white px-3 py-1 rounded-lg text-sm font-semibold flex items-center transition"
+                >
+                  <i class="fas fa-download mr-2"></i> ZIP
+                </a>
+              </div>
+
+              <!-- Resource 3 -->
+              <div
+                class="flex justify-between items-center p-4 bg-gray-50 rounded-lg border border-gray-200"
+              >
+                <div>
+                  <h4 class="font-medium text-primary">
+                    Financial Analysis Toolkit
+                  </h4>
+                  <p class="text-sm text-gray-600">
+                    Excel Templates & Formulas
+                  </p>
+                </div>
+                <a
+                  href="/pdfs/financial-toolkit.zip"
+                  download
+                  class="bg-accent hover:bg-blue-600 text-white px-3 py-1 rounded-lg text-sm font-semibold flex items-center transition"
+                >
+                  <i class="fas fa-download mr-2"></i> ZIP
+                </a>
+              </div>
+
+              <!-- Resource 4 -->
+              <div
+                class="flex justify-between items-center p-4 bg-gray-50 rounded-lg border border-gray-200"
+              >
+                <div>
+                  <h4 class="font-medium text-primary">
+                    All Previous Exam Papers
+                  </h4>
+                  <p class="text-sm text-gray-600">2019-2023 Collections</p>
+                </div>
+                <a
+                  href="/pdfs/exam-papers-archive.zip"
+                  download
+                  class="bg-accent hover:bg-blue-600 text-white px-3 py-1 rounded-lg text-sm font-semibold flex items-center transition"
+                >
+                  <i class="fas fa-download mr-2"></i> ZIP
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0">
+            <p>&copy; 2024 MBA Twinning Program. All rights reserved.</p>
+          </div>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-300 hover:text-white transition"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-gray-300 hover:text-white transition"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="text-gray-300 hover:text-white transition"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>

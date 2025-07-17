@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission | PU-SJC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1a365d",
+              secondary: "#2c5282",
+              accent: "#4299e1",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="bg-primary text-white shadow-md sticky top-0 z-[99999]">
+      <div class="container mx-auto px-4">
+        <!-- Top Bar (Logo + Institutions) -->
+
+        <!-- Navigation -->
+        <nav class="flex justify-between items-center py-7 gap-3">
+          <!-- Desktop Menu -->
+          <div>
+            <div class="flex gap-3 items-center">
+              <div class="hidden lg:flex justify-center items-center gap-2">
+                <p class="hidden lg:block font-bold xl:text-xl">
+                  Society of St. Joseph's Colllege
+                </p>
+                <img
+                  src="./assets/sjc logo.png"
+                  alt="sjc logo"
+                  class="w-[40px] h-[50px]"
+                />
+              </div>
+              <div class="block lg:hidden">
+                <img src="./assets/pu.png" alt="pu logo" class="w-[50px]" />
+              </div>
+            </div>
+          </div>
+          <div class="hidden lg:flex space-x-6">
+            <a
+              href="index.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >About</a
+            >
+            <a
+              href="./academics.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Academics</a
+            >
+            <a
+              href="admissions.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Admissions</a
+            >
+            <a
+              href="gallery.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Gallery</a
+            >
+
+            <a
+              href="announcement.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Announcement</a
+            >
+            <a
+              href="result.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Results</a
+            >
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-button"
+            class="lg:hidden text-xl focus:outline-none"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- Apply Now Button (Desktop) -->
+          <div class="hidden lg:flex justify-center items-center gap-2">
+            <p class="font-bold xl:text-xl">Pondicherry University</p>
+            <img
+              src="./assets/pu.png"
+              alt="pu logo "
+              class="w-[50px] h-[50px]"
+            />
+          </div>
+        </nav>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-blue-900 pb-4">
+          <div class="flex flex-col space-y-3 px-4">
+            <a
+              href="index.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >About</a
+            >
+            <a
+              href="./academics.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Academics</a
+            >
+            <a
+              href="admissions.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Admissions</a
+            >
+            <a
+              href="gallery.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Gallery</a
+            >
+
+            <a
+              href="announcement.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Announcement</a
+            >
+            <a
+              href="result.html"
+              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
+              >Results</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Admissions Hero Section -->
+    <section
+      class="relative bg-gradient-to-br from-primary to-secondary text-white overflow-hidden min-h-[80vh] flex items-center"
+    >
+      <!-- Decorative Elements -->
+      <div class="absolute top-0 left-0 w-full h-full opacity-10">
+        <div
+          class="absolute top-0 right-0 w-64 h-64 bg-accent rounded-full mix-blend-multiply filter blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-0 left-0 w-96 h-96 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl"
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-4 py-24 relative z-10">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+          <!-- Left Column - Content -->
+          <div class="lg:w-1/2">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+              Begin Your <span class="text-accent">Global MBA</span> Journey
+            </h1>
+            <p class="text-xl text-blue-100 mb-8 max-w-lg">
+              Applications now open for the 2024 batch of our prestigious MBA
+              Twinning Program with St. Joseph's College and Pondicherry
+              University.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 mb-8">
+              <a
+                href="#requirements"
+                class="bg-accent hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold text-center transition shadow-lg transform hover:scale-105"
+              >
+                Admission Requirements
+              </a>
+              <a
+                href="#apply-now"
+                class="bg-white hover:bg-gray-100 text-primary px-8 py-3 rounded-lg font-semibold text-center transition shadow-lg transform hover:scale-105"
+              >
+                Apply Now
+              </a>
+            </div>
+
+            <!-- Key Dates -->
+            <div
+              class="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-blue-300/20 max-w-md"
+            >
+              <h3 class="font-semibold mb-3 flex items-center">
+                <i class="fas fa-calendar-alt text-accent mr-2"></i> Important
+                Dates
+              </h3>
+              <ul class="space-y-2">
+                <li class="flex justify-between">
+                  <span>Application Deadline:</span>
+                  <span class="font-medium">June 30, 2024</span>
+                </li>
+                <li class="flex justify-between">
+                  <span>Entrance Exam:</span>
+                  <span class="font-medium">July 15, 2024</span>
+                </li>
+                <li class="flex justify-between">
+                  <span>Program Start:</span>
+                  <span class="font-medium">August 12, 2024</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right Column - Form Preview -->
+          <div class="lg:w-1/2">
+            <div class="bg-white rounded-xl shadow-2xl overflow-hidden">
+              <div class="bg-primary py-3 px-6">
+                <h3 class="text-lg font-bold text-white">
+                  Application Preview
+                </h3>
+              </div>
+              <div class="p-6">
+                <div class="space-y-4">
+                  <div class="border-b border-gray-200 pb-4">
+                    <h4 class="text-secondary font-semibold mb-2">
+                      Step 1: Personal Details
+                    </h4>
+                    <div class="h-3 bg-gray-100 rounded-full w-full"></div>
+                  </div>
+                  <div class="border-b border-gray-200 pb-4">
+                    <h4 class="text-secondary font-semibold mb-2">
+                      Step 2: Academic History
+                    </h4>
+                    <div class="h-3 bg-gray-100 rounded-full w-3/4"></div>
+                  </div>
+                  <div class="border-b border-gray-200 pb-4">
+                    <h4 class="text-secondary font-semibold mb-2">
+                      Step 3: Documents Upload
+                    </h4>
+                    <div class="h-3 bg-gray-100 rounded-full w-1/2"></div>
+                  </div>
+                  <div>
+                    <h4 class="text-secondary font-semibold mb-2">
+                      Step 4: Payment
+                    </h4>
+                    <div class="h-3 bg-gray-100 rounded-full w-1/4"></div>
+                  </div>
+                </div>
+                <div
+                  class="mt-6 bg-blue-50 text-primary p-4 rounded-lg text-sm"
+                >
+                  <i class="fas fa-info-circle text-accent mr-2"></i> Average
+                  completion time: 15 minutes
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scrolling Indicator -->
+      <div
+        class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+      >
+        <a href="#admission-process" class="text-white">
+          <i class="fas fa-chevron-down text-2xl"></i>
+        </a>
+      </div>
+    </section>
+    <div
+      class="flex flex-col md:flex-row min-h-screen bg-gray-50 w-[90%] lg:w-[80%] py-10 overflow-auto mx-auto"
+    >
+      <!-- Sidebar -->
+      <div
+        class="w-full md:w-64 bg-primary text-white p-4 shadow-lg rounded-lg"
+      >
+        <h2 class="text-xl font-bold mb-6 border-b border-blue-400 pb-2">
+          Program Documents
+        </h2>
+        <ul class="space-y-3">
+          <li>
+            <button
+              onclick="loadPdf('./assets/pdfs/MBA Brochure 2025.pdf', 'Program Prospectus')"
+              class="w-full text-left hover:bg-blue-700 px-4 py-2 rounded-lg transition flex items-center justify-between"
+            >
+            <div>
+              <i class="fas fa-file-pdf mr-3 text-red-400"></i>
+              Prospects - View
+
+            </div>
+            <div class="block md:hidden">
+              <a href="./assets/pdfs/MBA Brochure 2025.pdf" download><i class="fas fa-file-pdf mr-2 text-red-500"></i>  Download</a>
+            </div>
+            </button>
+          </li>
+          <li>
+            <button
+              onclick="loadPdf('assets/pdfs/MBA Admission Instructions 2025-2026.pdf', 'Admission Instructions')"
+              class="w-full text-left hover:bg-blue-700 px-4 py-2 rounded-lg transition flex items-center justify-between"
+            >
+            <div>
+              <i class="fas fa-file-pdf mr-3 text-red-400"></i>
+              Admission Instructions
+
+            </div>
+              <div class="block md:hidden">
+              <a href="./assets/pdfs/MBA Admission Instructions 2025-2026.pdf" download><i class="fas fa-file-pdf mr-2 text-red-500"></i>  Download</a>
+            </div>
+            </button>
+          </li>
+          <li>
+            <button
+              onclick="loadPdf('assets/pdfs/MBA Course Pattern.pdf', 'Course Pattern')"
+              class="w-full text-left hover:bg-blue-700 px-4 py-2 rounded-lg transition flex items-center justify-between"
+            >
+            <div class="">
+              <i class="fas fa-file-pdf mr-3 text-red-400"></i>
+              Course Pattern
+
+            </div>
+              <div class="block md:hidden">
+              <a href="./assets/pdfs/MBA Course Pattern.pdf" download><i class="fas fa-file-pdf mr-2 text-red-500"></i>  Download</a>
+            </div>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- PDF Viewer Area -->
+      <div class="flex-1 p-6 hidden md:block w-[60%] mx-auto">
+        <div class="bg-white rounded-lg shadow-md h-full flex flex-col">
+          <div class="flex justify-between items-center border-b p-4">
+            <h3 id="pdf-title" class="text-xl font-bold text-primary">
+              Select a Document
+            </h3>
+            <div class="flex flex-wrap
+            ">
+              <button
+                id="prev-page"
+                class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-3 py-1 rounded mr-2 hidden"
+              >
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <span id="page-num" class="text-gray-600 mx-2 hidden"
+                >Page 1 of 10</span
+              >
+              <button
+                id="next-page"
+                class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-3 py-1 rounded hidden"
+              >
+                <i class="fas fa-chevron-right"></i>
+              </button>
+              <a
+                id="download-btn"
+                href="#"
+                download
+                class="bg-accent hover:bg-blue-600 text-white px-4 py-2 rounded-lg ml-4 hidden"
+              >
+                <i class="fas fa-download mr-2"></i> Download
+              </a>
+            </div>
+          </div>
+
+          <div class="flex-1 overflow-auto p-4">
+            <div
+              id="pdf-placeholder"
+              class="h-full flex flex-col items-center justify-center text-gray-500"
+            >
+              <i class="fas fa-file-pdf text-5xl mb-4 text-red-400"></i>
+              <p class="text-lg">Select a document from the sidebar to view</p>
+            </div>
+            <canvas id="pdf-canvas" class="hidden mx-auto shadow-md"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PDF.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    <script>
+      // Set PDF.js worker path
+      pdfjsLib.GlobalWorkerOptions.workerSrc =
+        "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.worker.min.js";
+
+      let pdfDoc = null,
+        pageNum = 1,
+        pageRendering = false,
+        pageNumPending = null,
+        scale = 1.5;
+
+      // Get DOM elements
+      const canvas = document.getElementById("pdf-canvas");
+      const ctx = canvas.getContext("2d");
+      const placeholder = document.getElementById("pdf-placeholder");
+      const pageNumElem = document.getElementById("page-num");
+      const prevBtn = document.getElementById("prev-page");
+      const nextBtn = document.getElementById("next-page");
+      const downloadBtn = document.getElementById("download-btn");
+      const titleElem = document.getElementById("pdf-title");
+
+      function loadPdf(url, title) {
+        // Show loading state
+        placeholder.classList.add("hidden");
+        canvas.classList.remove("hidden");
+        titleElem.textContent = title;
+        downloadBtn.href = url;
+        downloadBtn.classList.remove("hidden");
+
+        // Load the PDF
+        pdfjsLib
+          .getDocument(url)
+          .promise.then(function (pdfDoc_) {
+            pdfDoc = pdfDoc_;
+            pageNum = 1;
+
+            // Show page navigation
+            prevBtn.classList.remove("hidden");
+            nextBtn.classList.remove("hidden");
+            pageNumElem.classList.remove("hidden");
+
+            // Render first page
+            renderPage(pageNum);
+
+            // Update page count
+            document.getElementById(
+              "page-num"
+            ).textContent = `Page ${pageNum} of ${pdfDoc.numPages}`;
+          })
+          .catch((err) => {
+            console.error("PDF loading error:", err);
+            placeholder.classList.remove("hidden");
+            placeholder.innerHTML = `
+        <i class="fas fa-exclamation-triangle text-5xl mb-4 text-yellow-500"></i>
+        <p class="text-lg">Failed to load document</p>
+        <p class="text-sm mt-2">${err.message}</p>
+      `;
+            canvas.classList.add("hidden");
+          });
+      }
+
+      function renderPage(num) {
+        pageRendering = true;
+
+        pdfDoc.getPage(num).then(function (page) {
+          const viewport = page.getViewport({ scale: scale });
+          canvas.height = viewport.height;
+          canvas.width = viewport.width;
+
+          const renderContext = {
+            canvasContext: ctx,
+            viewport: viewport,
+          };
+
+          const renderTask = page.render(renderContext);
+
+          renderTask.promise.then(function () {
+            pageRendering = false;
+            if (pageNumPending !== null) {
+              renderPage(pageNumPending);
+              pageNumPending = null;
+            }
+          });
+        });
+
+        document.getElementById(
+          "page-num"
+        ).textContent = `Page ${num} of ${pdfDoc.numPages}`;
+      }
+
+      function queueRenderPage(num) {
+        if (pageRendering) {
+          pageNumPending = num;
+        } else {
+          renderPage(num);
+        }
+      }
+
+      function onPrevPage() {
+        if (pageNum <= 1) return;
+        pageNum--;
+        queueRenderPage(pageNum);
+      }
+
+      function onNextPage() {
+        if (pageNum >= pdfDoc.numPages) return;
+        pageNum++;
+        queueRenderPage(pageNum);
+      }
+
+      // Event listeners
+      prevBtn.addEventListener("click", onPrevPage);
+      nextBtn.addEventListener("click", onNextPage);
+    </script>
+
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0">
+            <p>&copy; 2024 MBA Twinning Program. All rights reserved.</p>
+          </div>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-300 hover:text-white transition"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-gray-300 hover:text-white transition"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="text-gray-300 hover:text-white transition"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>
