@@ -1,0 +1,49 @@
+<nav class="flex justify-evenly items-center">
+          <!-- Desktop Menu -->
+          <div>
+            <div class="flex gap-3 items-center">
+              <div class="hidden lg:flex justify-center items-center gap-2">
+                <img
+                  src="./assets/sjc logo.png"
+                  alt="sjc logo"
+                  class="w-[80px] h-[90px]"
+                />
+                <div class="text-center">
+                  <p class="hidden lg:block font-bold xl:text-[36px]">
+                    Society of St. Joseph's Colllege
+                  </p>
+                  <p>(Bharathidasan University)</p>
+                </div>
+              </div>
+              <div class="block lg:hidden">
+                <img src="./assets/pu.png" alt="pu logo" class="w-[50px]" />
+              </div>
+            </div>
+          </div>
+          <div class="h-[190px] w-[3px] bg-white rounded-md rotate-[25deg]"></div>
+
+          <div class="flex flex-col">
+            <div class="hidden lg:flex justify-center items-center gap-2">
+              <div class="text-center">
+                <p class="font-bold xl:text-[36px]">Pondicherry University</p>
+                <p>(a centeral university)</p>
+              </div>
+              <img
+                src="./assets/pu.png"
+                alt="pu logo "
+                class="w-[80px] h-[80px]"
+              />
+            </div>
+            <div class="w-[170%] h-[3px] bg-white relative -left-[127px] top-[45px]"></div>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-button"
+            class="lg:hidden text-xl focus:outline-none"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- Apply Now Button (Desktop) -->
+        </nav>

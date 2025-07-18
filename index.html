@@ -26,234 +26,242 @@
     </script>
   </head>
   <body>
-   <header class="bg-primary text-white shadow-md sticky top-0 z-[99999]">
-      <div class="container mx-auto px-4">
-        <!-- Top Bar (Logo + Institutions) -->
-
-        <!-- Navigation -->
-        <nav class="flex justify-between items-center py-7 gap-3">
-          <!-- Desktop Menu -->
-          <div>
-            <div class="flex gap-3 items-center">
-              <div class="hidden lg:flex justify-center items-center gap-2">
-                <p class="hidden lg:block font-bold xl:text-xl ">Society of St. Joseph's Colllege</p>
-                <img
-                  src="./assets/sjc logo.png"
-                  alt="sjc logo"
-                  class="w-[40px] h-[50px]"
-                />
-              </div>
-              <div class="block lg:hidden">
-                <img src="./assets/pu.png" alt="pu logo" class="w-[50px]" />
-              </div>
+    <header class="bg-primary text-white shadow-md  top-0 z-[99999]">
+      <div
+        class="flex flex-col lg:flex-row justify-evenly container mx-auto bg-primary text-white"
+      >
+        <div
+          class="container mx-auto px-4 pt-5 hidden lg:flex items-center justify-between"
+        >
+          <!-- Left section (Logo + Title) -->
+          <div class="flex items-center space-x-4 justify-center">
+            <img
+              src="./assets/sjc logo.png"
+              alt="Logo"
+              class="h-30 xl:w-24 w-20 object-contain"
+            />
+            <div class="flex flex-col gap-3">
+              <h1 class="text-base xl:text-3xl text-center font-bold">
+                Society of St. Joseph's College (Autonomous)
+              </h1>
+              <p class="text-yellow-400 text-center font-semibold text-xs lg:text-sm">
+                MBA TWINNING PROGRAMME
+              </p>
             </div>
           </div>
-          <div class="hidden lg:flex space-x-6">
-            <a
-              href="index.html"
-              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
-              >Home</a
-            >
-            <a
-              href="about.html"
-              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
-              >About</a
-            >
-            <a
-              href="./academics.html"
-              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
-              >Academics</a
-            >
-            <a
-              href="admissions.html"
-              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
-              >Admissions</a
-            >
-            <a
-              href="gallery.html"
-              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
-              >Gallery</a
-            >
 
-            <a
-              href="announcement.html"
-              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
-              >Announcement</a
-            >
-            <a
-              href="result.html"
-              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
-              >Results</a
-            >
-          </div>
+          <!-- Right: Student Verification (hidden on small, shown on large) -->
 
-          <!-- Mobile Menu Button -->
-          <button
-            id="mobile-menu-button"
-            class="lg:hidden text-xl focus:outline-none"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
+          <!-- Hamburger Menu (Mobile) -->
+        </div>
+        <!-- University Block -->
+        <div
+          class="hidden w-full h-fit lg:flex justify-center bg-yellow-400 text-black py-8 relative"
+        >
+          <div class="absolute left-0 top-0 h-full w-10 bg-primary clip-left-cut z-10 hidden xl:block "></div>
 
-          <!-- Apply Now Button (Desktop) -->
-          <div class="hidden lg:flex justify-center items-center gap-2">
-            <p class="font-bold xl:text-xl">Pondicherry University</p>
+          <div class="flex items-center space-x-4">
             <img
               src="./assets/pu.png"
-              alt="pu logo "
-              class="w-[50px] h-[50px]"
+              alt="Pondicherry Logo"
+              class="h-20 w-20 object-contain"
             />
+            <div>
+              <h2 class="font-bold xl:text-3xl">PONDICHERRY UNIVERSITY</h2>
+              <p class="text-sm">
+                (A Central University established by an Act of Parliament No. 53
+                of 1985)
+              </p>
+              <a
+                href="https://www.pondiuni.edu.in"
+                class="text-blue-700 text-sm underline"
+                >www.pondiuni.edu.in</a
+              >
+            </div>
           </div>
-        </nav>
+        </div>
+        <div class="flex lg:hidden w-[90%] py-5 items-center mx-auto justify-between">
+          <div class="flex items-center space-x-4">
+            <div>
+              <img
+                src="./assets/pu.png"
+                alt="Pondicherry Logo"
+                class="h-14 w-14 object-contain"
+              />
+            </div>
 
-        <!-- Mobile Menu (Hidden by default) -->
-        <div id="mobile-menu" class="lg:hidden hidden bg-blue-900 pb-4">
-          <div class="flex flex-col space-y-3 px-4">
-            <a
-              href="index.html"
-              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
-              >Home</a
-            >
-            <a
-              href="about.html"
-              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
-              >About</a
-            >
-            <a
-              href="./academics.html"
-              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
-              >Academics</a
-            >
-            <a
-              href="admissions.html"
-              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
-              >Admissions</a
-            >
-            <a
-              href="gallery.html"
-              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
-              >Gallery</a
-            >
+            <div>
+              <img src="./assets/sjc logo.png" alt="" class="h-14 w-14 object-contain" />
+            </div>
+          </div>
 
-            <a
-              href="announcement.html"
-              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
-              >Announcement</a
+          <div class="lg:hidden">
+            <button
+              id="menu-toggle"
+              class="text-white text-2xl focus:outline-none"
             >
-            <a
-              href="result.html"
-              class="hover:text-accent transition py-2 px-1 border-b-2 border-transparent hover:border-accent"
-              >Results</a
-            >
+              <i class="fas fa-bars"></i>
+            </button>
           </div>
         </div>
       </div>
+
+      <!-- Desktop Nav -->
+      
     </header>
+    <div class="bg-primary sticky top-0 z-[9999]">
+     
+        <!-- Desktop Nav -->
+      <nav
+          class="hidden sticky lg:flex justify-end mx-auto bg-primary w-[80%]  text-white py-8 text-sm font-medium space-x-6"
+        >
+        
+          <a href="index.html" class="hover:text-accent">Home</a>
+          <a href="about.html" class="hover:text-accent">About</a>
+          <a href="academics.html" class="hover:text-accent">Academics</a>
+          <a href="admissions.html" class="hover:text-accent">Admissions</a>
+          <a href="gallery.html" class="hover:text-accent">Gallery</a>
+          <a href="announcement.html" class="hover:text-accent">Announcement</a>
+          <a href="result.html" class="hover:text-accent">Results</a>
+        </nav>
+  
+        <!-- Mobile Nav (toggle visibility) -->
+        <nav
+          id="mobile-menu"
+          class="lg:hidden hidden bg-primary text-white px-4 py-4 space-y-3"
+        >
+          <a href="index.html" class="block hover:text-accent">Home</a>
+          <a href="about.html" class="block hover:text-accent">About</a>
+          <a href="academics.html" class="block hover:text-accent">Academics</a>
+          <a href="admissions.html" class="block hover:text-accent">Admissions</a>
+          <a href="gallery.html" class="block hover:text-accent">Gallery</a>
+          <a href="announcement.html" class="block hover:text-accent"
+            >Announcement</a
+          >
+          <a href="result.html" class="block hover:text-accent">Results</a>
+        </nav>
 
-<section id="home" class="pt-24 pb-16 relative overflow-hidden group h-[80vh] ">
-  <!-- Carousel container with black overlay -->
-  <div class="absolute inset-0">
-    <!-- Black overlay -->
-    <div class="absolute inset-0 bg-[#0000006e] z-[99]"></div>
-
-    <!-- Carousel slides - First slide has opacity-100 by default -->
-    <div class="relative h-full w-full z-0">
-      <!-- Slide 1 (visible by default) -->
-      <div class="carousel-slide absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out">
-        <img
-          src="./assets/6219390050.jpg"
-          alt="MBA Students"
-          class="w-full h-full object-cover"
-        />
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
-        <img
-          src="./assets/175.jpg"
-          alt="Campus"
-          class="w-full h-full object-cover"
-        />
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
-        <img
-          src="./assets/Photo6.jpg"
-          alt="Classroom"
-          class="w-full h-full object-cover"
-        />
-      </div>
     </div>
-  </div>
 
-  <!-- Content container -->
-  <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center h-full relative z-[999] text-white">
-    <div class="text-center text-white flex flex-col gap-3 ">
-      <h1 class="text-[2rem] lg:text-[5rem] font-bold">MBA Twinning Program</h1>
-      <p class=" text-xl lg:text-3xl">"Twinning to Wining Career"</p>
-      <p class="text-xl mb-6">
-        A collaborative degree by
-        <span class="font-semibold">St. Joseph's College</span> and
-        <span class="font-semibold">Pondicherry University</span>
-      </p>
-    </div>
-  </div>
-
-  <!-- Carousel controls -->
-  <div class="absolute bottom-8 left-0 right-0 flex justify-center space-x-2 z-10">
-    <button
-      class="carousel-control w-3 h-3 rounded-full bg-white opacity-100 focus:outline-none"
-      data-slide="0"
-    ></button>
-    <button
-      class="carousel-control w-3 h-3 rounded-full bg-white opacity-50 focus:outline-none"
-      data-slide="1"
-    ></button>
-    <button
-      class="carousel-control w-3 h-3 rounded-full bg-white opacity-50 focus:outline-none"
-      data-slide="2"
-    ></button>
-  </div>
-
-  <!-- Navigation arrows -->
-  <button
-    class="carousel-prev absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-black bg-opacity-50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="h-6 w-6"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
+    <section
+      id="home"
+      class="pt-24 pb-16 relative overflow-hidden group h-[80vh]"
     >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        d="M15 19l-7-7 7-7"
-      />
-    </svg>
-  </button>
-  <button
-    class="carousel-next absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-black bg-opacity-50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="h-6 w-6"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        d="M9 5l7 7-7 7"
-      />
-    </svg>
-  </button>
-</section>
+      <!-- Carousel container with black overlay -->
+      <div class="absolute inset-0">
+        <!-- Black overlay -->
+        <div class="absolute inset-0 bg-[#0000006e] z-[99]"></div>
+
+        <!-- Carousel slides - First slide has opacity-100 by default -->
+        <div class="relative h-full w-full z-0">
+          <!-- Slide 1 (visible by default) -->
+          <div
+            class="carousel-slide absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out"
+          >
+            <img
+              src="./assets/6219390050.jpg"
+              alt="MBA Students"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <!-- Slide 2 -->
+          <div
+            class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out"
+          >
+            <img
+              src="./assets/175.jpg"
+              alt="Campus"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <!-- Slide 3 -->
+          <div
+            class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out"
+          >
+            <img
+              src="./assets/Photo6.jpg"
+              alt="Classroom"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Content container -->
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center h-full relative z-[999] text-white"
+      >
+        <div class="text-center text-white flex flex-col gap-3">
+          <h1 class="text-[2rem] lg:text-[5rem] font-bold">
+            MBA Twinning Program
+          </h1>
+          <p class="text-xl lg:text-3xl">"Twinning to Wining Career"</p>
+          <p class="text-xl mb-6">
+            A collaborative degree by
+            <span class="font-semibold">St. Joseph's College</span> and
+            <span class="font-semibold">Pondicherry University</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Carousel controls -->
+      <div
+        class="absolute bottom-8 left-0 right-0 flex justify-center space-x-2 z-10"
+      >
+        <button
+          class="carousel-control w-3 h-3 rounded-full bg-white opacity-100 focus:outline-none"
+          data-slide="0"
+        ></button>
+        <button
+          class="carousel-control w-3 h-3 rounded-full bg-white opacity-50 focus:outline-none"
+          data-slide="1"
+        ></button>
+        <button
+          class="carousel-control w-3 h-3 rounded-full bg-white opacity-50 focus:outline-none"
+          data-slide="2"
+        ></button>
+      </div>
+
+      <!-- Navigation arrows -->
+      <button
+        class="carousel-prev absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-black bg-opacity-50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </button>
+      <button
+        class="carousel-next absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-black bg-opacity-50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </button>
+    </section>
     <!-- About Section -->
     <section id="about" class="py-16 bg-white">
       <div class="container mx-auto px-4">
@@ -502,4 +510,13 @@
     </footer>
   </body>
   <script src="./script.js"></script>
+  <script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
 </html>
