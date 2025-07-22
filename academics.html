@@ -27,7 +27,7 @@
     </script>
   </head>
   <body>
- <header class="bg-primary text-white shadow-md  top-0 z-[99999]">
+ <header class="bg-primary text-white shadow-md top-0 z-[99999]">
       <div
         class="flex flex-col lg:flex-row justify-evenly container mx-auto bg-primary text-white"
       >
@@ -39,15 +39,12 @@
             <img
               src="./assets/sjc logo.png"
               alt="Logo"
-              class="h-30 xl:w-24 w-20 object-contain"
+              class="h-28 xl:w-28 w-20 object-contain"
             />
             <div class="flex flex-col gap-3">
-              <h1 class="text-base xl:text-3xl text-center font-bold">
+              <h1 class="text-base xl:text-3xl text-center font-bold uppercase">
                 Society of St. Joseph's College (Autonomous)
               </h1>
-              <p class="text-yellow-400 text-center font-semibold text-xs lg:text-sm">
-                MBA TWINNING PROGRAMME
-              </p>
             </div>
           </div>
 
@@ -59,7 +56,9 @@
         <div
           class="hidden w-full h-fit lg:flex justify-center bg-yellow-400 text-black py-8 relative"
         >
-          <div class="absolute left-0 top-0 h-full w-10 bg-primary clip-left-cut z-10 hidden xl:block "></div>
+          <div
+            class="absolute left-0 top-0 h-full w-10 bg-primary clip-left-cut z-10 hidden xl:block"
+          ></div>
 
           <div class="flex items-center space-x-4">
             <img
@@ -73,15 +72,12 @@
                 (A Central University established by an Act of Parliament No. 53
                 of 1985)
               </p>
-              <a
-                href="https://www.pondiuni.edu.in"
-                class="text-blue-700 text-sm underline"
-                >www.pondiuni.edu.in</a
-              >
             </div>
           </div>
         </div>
-        <div class="flex lg:hidden w-[90%] py-5 items-center mx-auto justify-between">
+        <div
+          class="flex lg:hidden w-[90%] py-5 items-center mx-auto justify-between"
+        >
           <div class="flex items-center space-x-4">
             <div>
               <img
@@ -92,7 +88,11 @@
             </div>
 
             <div>
-              <img src="./assets/sjc logo.png" alt="" class="h-14 w-14 object-contain" />
+              <img
+                src="./assets/sjc logo.png"
+                alt=""
+                class="h-14 w-14 object-contain"
+              />
             </div>
           </div>
 
@@ -108,41 +108,71 @@
       </div>
 
       <!-- Desktop Nav -->
-      
     </header>
-    <div class="bg-primary sticky top-0 z-[9999]">
-     
-        <!-- Desktop Nav -->
-      <nav
-          class="hidden sticky lg:flex justify-end mx-auto bg-primary w-[80%]  text-white py-8 text-sm font-medium space-x-6"
-        >
-        
-          <a href="index.html" class="hover:text-accent">Home</a>
-          <a href="about.html" class="hover:text-accent">About</a>
-          <a href="academics.html" class="hover:text-accent">Academics</a>
-          <a href="admissions.html" class="hover:text-accent">Admissions</a>
-          <a href="gallery.html" class="hover:text-accent">Gallery</a>
-          <a href="announcement.html" class="hover:text-accent">Announcement</a>
-          <a href="result.html" class="hover:text-accent">Results</a>
-        </nav>
-  
-        <!-- Mobile Nav (toggle visibility) -->
-        <nav
-          id="mobile-menu"
-          class="lg:hidden hidden bg-primary text-white px-4 py-4 space-y-3"
-        >
-          <a href="index.html" class="block hover:text-accent">Home</a>
-          <a href="about.html" class="block hover:text-accent">About</a>
-          <a href="academics.html" class="block hover:text-accent">Academics</a>
-          <a href="admissions.html" class="block hover:text-accent">Admissions</a>
-          <a href="gallery.html" class="block hover:text-accent">Gallery</a>
-          <a href="announcement.html" class="block hover:text-accent"
-            >Announcement</a
-          >
-          <a href="result.html" class="block hover:text-accent">Results</a>
-        </nav>
-
+    <div class="bg-primary text-white text-center py-2 font-semibold hidden lg:block">
+      <p>MBA TWINNING PROGRAM</p>
     </div>
+     <div class="bg-primary sticky top-0 z-[9999]">
+  <!-- Desktop Nav -->
+  <nav class="hidden sticky lg:flex justify-end mx-auto bg-primary w-[80%] text-white py-8 text-sm font-medium space-x-6">
+    <a href="index.html" class="hover:text-accent">Home</a>
+    <a href="about.html" class="hover:text-accent">About</a>
+    
+    <!-- Academics Dropdown -->
+    <div class="relative group">
+      <button class="hover:text-accent flex items-center">
+        Academics
+        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+      <div class="absolute hidden group-hover:block bg-white text-primary min-w-[200px] rounded-md shadow-lg z-10">
+        <a href="academics.html" class="block px-4 py-2 hover:bg-gray-100">Academic Programs</a>
+        <a href="faculty.html" class="block px-4 py-2 hover:bg-gray-100">Faculty</a>
+      </div>
+    </div>
+    
+    <a href="admissions.html" class="hover:text-accent">Admissions</a>
+    <a href="gallery.html" class="hover:text-accent">Gallery</a>
+    <a href="announcement.html" class="hover:text-accent">Announcement</a>
+    <a href="result.html" class="hover:text-accent">Results</a>
+  </nav>
+
+  <!-- Mobile Nav (toggle visibility) -->
+  <nav id="mobile-menu" class="lg:hidden hidden bg-primary text-white px-4 py-4 space-y-3">
+    <a href="index.html" class="block hover:text-accent">Home</a>
+    <a href="about.html" class="block hover:text-accent">About</a>
+    
+    <!-- Mobile Academics Dropdown -->
+    <div class="relative">
+      <button onclick="toggleMobileDropdown()" class="w-full text-left hover:text-accent flex justify-between items-center">
+        Academics
+        <svg id="mobile-arrow" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+      <div id="mobile-academics-dropdown" class="hidden pl-4 mt-2 space-y-2">
+        <a href="academics.html" class="block hover:text-accent">Academic Programs</a>
+        <a href="faculty.html" class="block hover:text-accent">Faculty</a>
+      </div>
+    </div>
+    
+    <a href="admissions.html" class="block hover:text-accent">Admissions</a>
+    <a href="gallery.html" class="block hover:text-accent">Gallery</a>
+    <a href="announcement.html" class="block hover:text-accent">Announcement</a>
+    <a href="result.html" class="block hover:text-accent">Results</a>
+  </nav>
+</div>
+
+<script>
+  function toggleMobileDropdown() {
+    const dropdown = document.getElementById('mobile-academics-dropdown');
+    const arrow = document.getElementById('mobile-arrow');
+    dropdown.classList.toggle('hidden');
+    arrow.classList.toggle('transform');
+    arrow.classList.toggle('rotate-180');
+  }
+</script>
     <!-- Hero Section for Academics Page -->
     <section
       class="relative bg-gradient-to-br from-primary to-secondary text-white overflow-hidden"

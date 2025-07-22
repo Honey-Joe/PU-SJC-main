@@ -26,7 +26,7 @@
     </script>
   </head>
   <body>
-    <header class="bg-primary text-white shadow-md  top-0 z-[99999]">
+    <header class="bg-primary text-white shadow-md top-0 z-[99999]">
       <div
         class="flex flex-col lg:flex-row justify-evenly container mx-auto bg-primary text-white"
       >
@@ -38,15 +38,12 @@
             <img
               src="./assets/sjc logo.png"
               alt="Logo"
-              class="h-30 xl:w-24 w-20 object-contain"
+              class="h-28 xl:w-28 w-20 object-contain"
             />
             <div class="flex flex-col gap-3">
-              <h1 class="text-base xl:text-3xl text-center font-bold">
+              <h1 class="text-base xl:text-3xl text-center font-bold uppercase">
                 Society of St. Joseph's College (Autonomous)
               </h1>
-              <p class="text-yellow-400 text-center font-semibold text-xs lg:text-sm">
-                MBA TWINNING PROGRAMME
-              </p>
             </div>
           </div>
 
@@ -58,7 +55,9 @@
         <div
           class="hidden w-full h-fit lg:flex justify-center bg-yellow-400 text-black py-8 relative"
         >
-          <div class="absolute left-0 top-0 h-full w-10 bg-primary clip-left-cut z-10 hidden xl:block "></div>
+          <div
+            class="absolute left-0 top-0 h-full w-10 bg-primary clip-left-cut z-10 hidden xl:block"
+          ></div>
 
           <div class="flex items-center space-x-4">
             <img
@@ -72,15 +71,12 @@
                 (A Central University established by an Act of Parliament No. 53
                 of 1985)
               </p>
-              <a
-                href="https://www.pondiuni.edu.in"
-                class="text-blue-700 text-sm underline"
-                >www.pondiuni.edu.in</a
-              >
             </div>
           </div>
         </div>
-        <div class="flex lg:hidden w-[90%] py-5 items-center mx-auto justify-between">
+        <div
+          class="flex lg:hidden w-[90%] py-5 items-center mx-auto justify-between"
+        >
           <div class="flex items-center space-x-4">
             <div>
               <img
@@ -91,7 +87,11 @@
             </div>
 
             <div>
-              <img src="./assets/sjc logo.png" alt="" class="h-14 w-14 object-contain" />
+              <img
+                src="./assets/sjc logo.png"
+                alt=""
+                class="h-14 w-14 object-contain"
+              />
             </div>
           </div>
 
@@ -107,41 +107,71 @@
       </div>
 
       <!-- Desktop Nav -->
-      
     </header>
-    <div class="bg-primary sticky top-0 z-[9999]">
-     
-        <!-- Desktop Nav -->
-      <nav
-          class="hidden sticky lg:flex justify-end mx-auto bg-primary w-[80%]  text-white py-8 text-sm font-medium space-x-6"
-        >
-        
-          <a href="index.html" class="hover:text-accent">Home</a>
-          <a href="about.html" class="hover:text-accent">About</a>
-          <a href="academics.html" class="hover:text-accent">Academics</a>
-          <a href="admissions.html" class="hover:text-accent">Admissions</a>
-          <a href="gallery.html" class="hover:text-accent">Gallery</a>
-          <a href="announcement.html" class="hover:text-accent">Announcement</a>
-          <a href="result.html" class="hover:text-accent">Results</a>
-        </nav>
-  
-        <!-- Mobile Nav (toggle visibility) -->
-        <nav
-          id="mobile-menu"
-          class="lg:hidden hidden bg-primary text-white px-4 py-4 space-y-3"
-        >
-          <a href="index.html" class="block hover:text-accent">Home</a>
-          <a href="about.html" class="block hover:text-accent">About</a>
-          <a href="academics.html" class="block hover:text-accent">Academics</a>
-          <a href="admissions.html" class="block hover:text-accent">Admissions</a>
-          <a href="gallery.html" class="block hover:text-accent">Gallery</a>
-          <a href="announcement.html" class="block hover:text-accent"
-            >Announcement</a
-          >
-          <a href="result.html" class="block hover:text-accent">Results</a>
-        </nav>
-
+    <div class="bg-primary text-white text-center py-2 font-semibold hidden lg:block">
+      <p>MBA TWINNING PROGRAM</p>
     </div>
+     <div class="bg-primary sticky top-0 z-[9999]">
+  <!-- Desktop Nav -->
+  <nav class="hidden sticky lg:flex justify-end mx-auto bg-primary w-[80%] text-white py-8 text-sm font-medium space-x-6">
+    <a href="index.html" class="hover:text-accent">Home</a>
+    <a href="about.html" class="hover:text-accent">About</a>
+    
+    <!-- Academics Dropdown -->
+    <div class="relative group">
+      <button class="hover:text-accent flex items-center">
+        Academics
+        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+      <div class="absolute hidden group-hover:block bg-white text-primary min-w-[200px] rounded-md shadow-lg z-10">
+        <a href="academics.html" class="block px-4 py-2 hover:bg-gray-100">Academic Programs</a>
+        <a href="faculty.html" class="block px-4 py-2 hover:bg-gray-100">Faculty</a>
+      </div>
+    </div>
+    
+    <a href="admissions.html" class="hover:text-accent">Admissions</a>
+    <a href="gallery.html" class="hover:text-accent">Gallery</a>
+    <a href="announcement.html" class="hover:text-accent">Announcement</a>
+    <a href="result.html" class="hover:text-accent">Results</a>
+  </nav>
+
+  <!-- Mobile Nav (toggle visibility) -->
+  <nav id="mobile-menu" class="lg:hidden hidden bg-primary text-white px-4 py-4 space-y-3">
+    <a href="index.html" class="block hover:text-accent">Home</a>
+    <a href="about.html" class="block hover:text-accent">About</a>
+    
+    <!-- Mobile Academics Dropdown -->
+    <div class="relative">
+      <button onclick="toggleMobileDropdown()" class="w-full text-left hover:text-accent flex justify-between items-center">
+        Academics
+        <svg id="mobile-arrow" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+      <div id="mobile-academics-dropdown" class="hidden pl-4 mt-2 space-y-2">
+        <a href="academics.html" class="block hover:text-accent">Academic Programs</a>
+        <a href="faculty.html" class="block hover:text-accent">Faculty</a>
+      </div>
+    </div>
+    
+    <a href="admissions.html" class="block hover:text-accent">Admissions</a>
+    <a href="gallery.html" class="block hover:text-accent">Gallery</a>
+    <a href="announcement.html" class="block hover:text-accent">Announcement</a>
+    <a href="result.html" class="block hover:text-accent">Results</a>
+  </nav>
+</div>
+
+<script>
+  function toggleMobileDropdown() {
+    const dropdown = document.getElementById('mobile-academics-dropdown');
+    const arrow = document.getElementById('mobile-arrow');
+    dropdown.classList.toggle('hidden');
+    arrow.classList.toggle('transform');
+    arrow.classList.toggle('rotate-180');
+  }
+</script>
 
     <section
       id="home"
@@ -274,78 +304,21 @@
             <img
               src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
               alt="St. Joseph's College and Pondicherry University Collaboration"
-              class="rounded-lg shadow-xl w-full"
+              class="rounded-lg shadow-xl w-[90%] mx-auto h-auto"
             />
           </div>
 
           <!-- Right Column: Content -->
           <div class="md:w-1/2">
-            <h3 class="text-2xl font-semibold text-secondary mb-4">
-              A Pioneering Collaboration
-            </h3>
-            <p class="text-gray-700 mb-4">
-              The
-              <span class="font-semibold text-primary"
-                >MBA Twinning Program</span
-              >
-              is a unique partnership between
-              <span class="font-semibold">St. Joseph's College</span>
-              (Autonomous) and
-              <span class="font-semibold">Pondicherry University</span>,
-              designed to deliver a globally competitive business education with
-              dual certification.
-            </p>
+  <h3 class="text-2xl font-semibold text-secondary mb-4">
+    A Pioneering Collaboration
+  </h3>
+  <p class="text-gray-700 mb-4">
+    St. Joseph's College Society and Pondicherry Central University jointly offer high quality MBA Twinning programme with specialization in Marketing, finance. HRM, International Business and General for all degree holders including office goers. The marked difference between the conventional distance education programme and this Twinning programme is that the students of twinning programme would undergo a serious extended class room interactive sessions handled by including industry experts on Sundays. Next to Loyola College (Chennai), St. Joseph's College is the only college in Tamilnadu authorized by the Pondicherry University to conduct the Twinning Programme.
+  </p>
 
-            <div class="space-y-4">
-              <!-- Key Point 1 -->
-              <div class="flex items-start">
-                <div class="bg-accent rounded-full p-2 mr-4 mt-1">
-                  <i class="fas fa-university text-white text-sm"></i>
-                </div>
-                <div>
-                  <h4 class="font-semibold text-gray-800">
-                    Two Prestigious Institutions
-                  </h4>
-                  <p class="text-gray-600">
-                    Leverage the academic excellence of St. Joseph's NAAC A++
-                    accreditation and Pondicherry University's UGC recognition.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Key Point 2 -->
-              <div class="flex items-start">
-                <div class="bg-accent rounded-full p-2 mr-4 mt-1">
-                  <i class="fas fa-award text-white text-sm"></i>
-                </div>
-                <div>
-                  <h4 class="font-semibold text-gray-800">
-                    Dual Degree Advantage
-                  </h4>
-                  <p class="text-gray-600">
-                    Earn separate MBA degrees from both institutions, enhancing
-                    your credibility in global job markets.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Key Point 3 -->
-              <div class="flex items-start">
-                <div class="bg-accent rounded-full p-2 mr-4 mt-1">
-                  <i class="fas fa-users text-white text-sm"></i>
-                </div>
-                <div>
-                  <h4 class="font-semibold text-gray-800">
-                    Industry-Aligned Curriculum
-                  </h4>
-                  <p class="text-gray-600">
-                    Blends St. Joseph's industry connections with Pondicherry
-                    University's research-driven pedagogy.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+ 
+</div>
         </div>
 
         <!-- Stats Counter -->
@@ -372,49 +345,79 @@
 
     <!-- Program Highlights -->
     <section id="program" class="py-16 bg-white">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center text-primary mb-12">
-          Program Highlights
-        </h2>
-        <div class="grid md:grid-cols-3 gap-8">
-          <div
-            class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition"
-          >
-            <div class="text-accent text-4xl mb-4">
-              <i class="fas fa-globe"></i>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">International Curriculum</h3>
-            <p>
-              Blend of Indian and global business practices with dual
-              certification.
-            </p>
-          </div>
-          <div
-            class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition"
-          >
-            <div class="text-accent text-4xl mb-4">
-              <i class="fas fa-chalkboard-teacher"></i>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Expert Faculty</h3>
-            <p>
-              Learn from industry veterans and academic leaders from both
-              institutions.
-            </p>
-          </div>
-          <div
-            class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition"
-          >
-            <div class="text-accent text-4xl mb-4">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Career Support</h3>
-            <p>
-              Dedicated placement cells for internships and job opportunities.
-            </p>
-          </div>
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-primary mb-12">
+      Programme Highlights
+    </h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Highlight 1 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+        <div class="text-accent text-4xl mb-4">
+          <i class="fas fa-user-graduate"></i>
         </div>
+        <h3 class="text-xl font-semibold mb-2">Open Eligibility</h3>
+        <p>
+          Any Degree holders can apply - working professionals, teachers, and students. No Age Limit.
+        </p>
       </div>
-    </section>
+
+      <!-- Highlight 2 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+        <div class="text-accent text-4xl mb-4">
+          <i class="fas fa-calendar-day"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Weekend Classes</h3>
+        <p>
+          Classes conducted only on Sundays (8:30 AM to 1:30 PM) at St. Joseph's College Campus.
+        </p>
+      </div>
+
+      <!-- Highlight 3 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+        <div class="text-accent text-4xl mb-4">
+          <i class="fas fa-university"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Dual Institutional Excellence</h3>
+        <p>
+          Degree awarded by Pondicherry University (Central University) with classes and examinations conducted by St. Joseph's College.
+        </p>
+      </div>
+
+      <!-- Highlight 4 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+        <div class="text-accent text-4xl mb-4">
+          <i class="fas fa-chalkboard-teacher"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Expert Faculty</h3>
+        <p>
+          Best teaching by highly qualified St. Joseph's faculty, Trichy experts, and industry professionals.
+        </p>
+      </div>
+
+      <!-- Highlight 5 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+        <div class="text-accent text-4xl mb-4">
+          <i class="fas fa-book"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Library Access</h3>
+        <p>
+          Full library facility available for twinning programme students.
+        </p>
+      </div>
+
+      <!-- Highlight 6 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+        <div class="text-accent text-4xl mb-4">
+          <i class="fas fa-clock"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Admission Policy</h3>
+        <p>
+          Admission strictly on FIRST COME FIRST SERVED basis.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Benefits -->
     <section id="benefits" class="py-16 bg-gray-50">
@@ -511,12 +514,11 @@
   </body>
   <script src="./script.js"></script>
   <script>
-  const menuToggle = document.getElementById("menu-toggle");
-  const mobileMenu = document.getElementById("mobile-menu");
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
 
-  menuToggle.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-  });
-</script>
-
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
 </html>
