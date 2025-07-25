@@ -113,56 +113,162 @@
       <p>MBA TWINNING PROGRAM</p>
     </div>
      <div class="bg-primary sticky top-0 z-[9999]">
-  <!-- Desktop Nav -->
-  <nav class="hidden sticky lg:flex justify-end mx-auto bg-primary w-[80%] text-white py-8 text-sm font-medium space-x-6">
-    <a href="index.html" class="hover:text-accent">Home</a>
-    <a href="about.html" class="hover:text-accent">About</a>
-    
-    <!-- Academics Dropdown -->
-    <div class="relative group">
-      <button class="hover:text-accent flex items-center">
-        Academics
-        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-        </svg>
-      </button>
-      <div class="absolute hidden group-hover:block bg-white text-primary min-w-[200px] rounded-md shadow-lg z-10">
-        <a href="academics.html" class="block px-4 py-2 hover:bg-gray-100">Academic Programs</a>
-        <a href="faculty.html" class="block px-4 py-2 hover:bg-gray-100">Faculty</a>
-      </div>
-    </div>
-    
-    <a href="admissions.html" class="hover:text-accent">Admissions</a>
-    <a href="gallery.html" class="hover:text-accent">Gallery</a>
-    <a href="announcement.html" class="hover:text-accent">Announcement</a>
-    <a href="result.html" class="hover:text-accent">Results</a>
-  </nav>
+      <!-- Desktop Nav -->
+      <nav
+        class="hidden sticky lg:flex justify-end mx-auto bg-primary w-[80%] text-white py-8 text-sm font-medium space-x-6"
+      >
+        <a href="index.html" class="hover:text-accent">Home</a>
+        <!-- Academics Dropdown -->
+        <div class="relative group">
+          <button class="hover:text-accent flex items-center">
+            About
+            <svg
+              class="w-4 h-4 ml-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <div
+            class="absolute hidden group-hover:block bg-white text-primary min-w-[200px] rounded-md shadow-lg z-10"
+          >
+            <a href="./about.html" class="block px-4 py-2 hover:bg-gray-100"
+              >About us</a
+            >
+            <a
+              href="admininstrator.html"
+              class="block px-4 py-2 hover:bg-gray-100"
+              >Administrators</a
+            >
+          </div>
+        </div>
 
-  <!-- Mobile Nav (toggle visibility) -->
-  <nav id="mobile-menu" class="lg:hidden hidden bg-primary text-white px-4 py-4 space-y-3">
-    <a href="index.html" class="block hover:text-accent">Home</a>
-    <a href="about.html" class="block hover:text-accent">About</a>
-    
-    <!-- Mobile Academics Dropdown -->
-    <div class="relative">
-      <button onclick="toggleMobileDropdown()" class="w-full text-left hover:text-accent flex justify-between items-center">
-        Academics
-        <svg id="mobile-arrow" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-        </svg>
-      </button>
-      <div id="mobile-academics-dropdown" class="hidden pl-4 mt-2 space-y-2">
-        <a href="academics.html" class="block hover:text-accent">Academic Programs</a>
-        <a href="faculty.html" class="block hover:text-accent">Faculty</a>
-      </div>
+        <!-- Academics Dropdown -->
+        <div class="relative group">
+          <button class="hover:text-accent flex items-center">
+            Academics
+            <svg
+              class="w-4 h-4 ml-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <div
+            class="absolute hidden group-hover:block bg-white text-primary min-w-[200px] rounded-md shadow-lg z-10"
+          >
+            <a href="academics.html" class="block px-4 py-2 hover:bg-gray-100"
+              >Academic Programs</a
+            >
+            <a href="faculty.html" class="block px-4 py-2 hover:bg-gray-100"
+              >Faculty</a
+            >
+          </div>
+        </div>
+
+        <a href="admissions.html" class="hover:text-accent">Admissions</a>
+        <a href="gallery.html" class="hover:text-accent">Gallery</a>
+        <a href="announcement.html" class="hover:text-accent">Announcement</a>
+        <a href="result.html" class="hover:text-accent">Results</a>
+      </nav>
+
+      <!-- Mobile Nav (toggle visibility) -->
+      <nav
+        id="mobile-menu"
+        class="lg:hidden hidden bg-primary text-white px-4 py-4 space-y-3"
+      >
+        <a href="index.html" class="block hover:text-accent">Home</a>
+        <div class="relative">
+          <button
+            onclick="toggleMobileDropdown()"
+            class="w-full text-left hover:text-accent flex justify-between items-center"
+          >
+            Academics
+            <svg
+              id="mobile-arrow"
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <div
+            id="mobile-academics-dropdown"
+            class="hidden pl-4 mt-2 space-y-2"
+          >
+            <a href="about.html" class="block hover:text-accent">About us</a>
+            <a href="admininstrator.html" class="block hover:text-accent"
+              >Administrators</a
+            >
+          </div>
+        </div>
+
+        <!-- Mobile Academics Dropdown -->
+        <div class="relative">
+          <button
+            onclick="toggleMobileDropdown()"
+            class="w-full text-left hover:text-accent flex justify-between items-center"
+          >
+            Academics
+            <svg
+              id="mobile-arrow"
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <div
+            id="mobile-academics-dropdown"
+            class="hidden pl-4 mt-2 space-y-2"
+          >
+            <a href="academics.html" class="block hover:text-accent"
+              >Academic Programs</a
+            >
+            <a href="faculty.html" class="block hover:text-accent">Faculty</a>
+          </div>
+        </div>
+
+        <a href="admissions.html" class="block hover:text-accent">Admissions</a>
+        <a href="gallery.html" class="block hover:text-accent">Gallery</a>
+        <a href="announcement.html" class="block hover:text-accent"
+          >Announcement</a
+        >
+        <a href="result.html" class="block hover:text-accent">Results</a>
+      </nav>
     </div>
-    
-    <a href="admissions.html" class="block hover:text-accent">Admissions</a>
-    <a href="gallery.html" class="block hover:text-accent">Gallery</a>
-    <a href="announcement.html" class="block hover:text-accent">Announcement</a>
-    <a href="result.html" class="block hover:text-accent">Results</a>
-  </nav>
-</div>
 
 <script>
   function toggleMobileDropdown() {

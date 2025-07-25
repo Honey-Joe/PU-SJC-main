@@ -119,7 +119,38 @@
         class="hidden sticky lg:flex justify-end mx-auto bg-primary w-[80%] text-white py-8 text-sm font-medium space-x-6"
       >
         <a href="index.html" class="hover:text-accent">Home</a>
-        <a href="about.html" class="hover:text-accent">About</a>
+        <!-- Academics Dropdown -->
+        <div class="relative group">
+          <button class="hover:text-accent flex items-center">
+            About
+            <svg
+              class="w-4 h-4 ml-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <div
+            class="absolute hidden group-hover:block bg-white text-primary min-w-[200px] rounded-md shadow-lg z-10"
+          >
+            <a href="./about.html" class="block px-4 py-2 hover:bg-gray-100"
+              >About us</a
+            >
+            <a
+              href="admininstrator.html"
+              class="block px-4 py-2 hover:bg-gray-100"
+              >Administrators</a
+            >
+          </div>
+        </div>
 
         <!-- Academics Dropdown -->
         <div class="relative group">
@@ -164,7 +195,38 @@
         class="lg:hidden hidden bg-primary text-white px-4 py-4 space-y-3"
       >
         <a href="index.html" class="block hover:text-accent">Home</a>
-        <a href="about.html" class="block hover:text-accent">About</a>
+        <div class="relative">
+          <button
+            onclick="toggleMobileDropdown()"
+            class="w-full text-left hover:text-accent flex justify-between items-center"
+          >
+            Academics
+            <svg
+              id="mobile-arrow"
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <div
+            id="mobile-academics-dropdown"
+            class="hidden pl-4 mt-2 space-y-2"
+          >
+            <a href="about.html" class="block hover:text-accent">About us</a>
+            <a href="admininstrator.html" class="block hover:text-accent"
+              >Administrators</a
+            >
+          </div>
+        </div>
 
         <!-- Mobile Academics Dropdown -->
         <div class="relative">
@@ -228,294 +290,613 @@
             <tbody class="divide-y divide-gray-200">
               <!-- Faculty 1 -->
               <tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">1</td>
-  <td class="py-4 px-4">Dr. S. Karthikeyan</td>
-  <td class="py-4 px-4 text-sm text-gray-600">M.P.T., M.Sc(Psy)., M.B.A., UGC-NET(Management), UGC-NET(HRM), Ph.D.</td>
-  <td class="py-4 px-4">St. Joseph's Institute of Management - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:skarthikeyanhr@jim.ac.in">skarthikeyanhr@jim.ac.in</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">2</td>
-  <td class="py-4 px-4">Dr. I. Jerry Richards</td>
-  <td class="py-4 px-4 text-sm text-gray-600">Assistant Professor</td>
-  <td class="py-4 px-4">Holy Cross College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:drjerryrichardsi@gmail.com">drjerryrichardsi@gmail.com</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">3</td>
-  <td class="py-4 px-4">Dr. R. Ganesasubramanian</td>
-  <td class="py-4 px-4 text-sm text-gray-600">M.A., Ph.D., SET, NET</td>
-  <td class="py-4 px-4">St. Joseph's College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:ganesasubramanian_ec1@mail.sjctni.edu">ganesasubramanian_ec1@mail.sjctni.edu</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">4</td>
-  <td class="py-4 px-4">Ms. V. Suganthi</td>
-  <td class="py-4 px-4 text-sm text-gray-600">Retired Assistant Professor</td>
-  <td class="py-4 px-4">Seethalakshmi Ramaswami College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:sukanvenkat1958@gmail.com">sukanvenkat1958@gmail.com</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">5</td>
-  <td class="py-4 px-4">Dr. B. Augustine Arockiaraj</td>
-  <td class="py-4 px-4 text-sm text-gray-600">Assistant Professor M.Com.,M.Phil.,B.Ed.,PGDCA.,NET.,Ph.D
-</td>
-  <td class="py-4 px-4">St. Joseph's College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:augustinearockiaraj_co2@mail.sjctni.edu">augustinearockiaraj_co2@mail.sjctni.edu</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">6</td>
-  <td class="py-4 px-4">Dr. R. Victor Lazarus</td>
-  <td class="py-4 px-4 text-sm text-gray-600">Ph.D</td>
-  <td class="py-4 px-4">Bishop Heber College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:bhcvictorlazarus@gmail.com">bhcvictorlazarus@gmail.com</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">7</td>
-  <td class="py-4 px-4">Dr. J. Vinothkumar</td>
-  <td class="py-4 px-4 text-sm text-gray-600">M.Com., M.Phil., MHRM., MBA., Ph.D</td>
-  <td class="py-4 px-4">St. Joseph's College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:vinothkumar_co1@mail.sjctni.edu">vinothkumar_co1@mail.sjctni.edu</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">8</td>
-  <td class="py-4 px-4">Dr. A. Savarimuthu</td>
-  <td class="py-4 px-4 text-sm text-gray-600">Assistant Professor (Retired)</td>
-  <td class="py-4 px-4">St. Joseph's Institute of Management - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:savarimuthu@jim.ac.in">savarimuthu@jim.ac.in</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">9</td>
-  <td class="py-4 px-4">Dr. P. Vishnukumar</td>
-  <td class="py-4 px-4 text-sm text-gray-600">Assistant Professor</td>
-  <td class="py-4 px-4">St. Joseph's College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:vishnu3sivam@gmail.com">vishnu3sivam@gmail.com</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">10</td>
-  <td class="py-4 px-4">Mr. Ramanathan</td>
-  <td class="py-4 px-4 text-sm text-gray-600">Entrepreneur</td>
-  <td class="py-4 px-4">Entrepreneur</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:mlavpm@yahoo.co.in">mlavpm@yahoo.co.in</a>, <a href="mailto:mlavpm@gmail.com">mlavpm@gmail.com</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">11</td>
-  <td class="py-4 px-4">Dr. S. Najma</td>
-  <td class="py-4 px-4 text-sm text-gray-600">Assistant Professor</td>
-  <td class="py-4 px-4">Holy Cross College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:s.najmasha@gmail.com">s.najmasha@gmail.com</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">12</td>
-  <td class="py-4 px-4">Dr. Dennis Edward Fernando</td>
-  <td class="py-4 px-4 text-sm text-gray-600">M. Com., M.B.A., M.Phil., Ph.D.</td>
-  <td class="py-4 px-4">St. Joseph's College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:dennisedwardfernando_co2@mail.sjctni.edu">dennisedwardfernando_co2@mail.sjctni.edu</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">13</td>
-  <td class="py-4 px-4">Dr. M. Antony Jesuraja</td>
-  <td class="py-4 px-4 text-sm text-gray-600">M.Com., M.Phil., Ph.D., NET</td>
-  <td class="py-4 px-4">St. Joseph's College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:antonyjesuraj@yahoo.com">antonyjesuraj@yahoo.com</a>, <a href="mailto:antonyjesuraja_co1@mail.sjctni.edu">antonyjesuraja_co1@mail.sjctni.edu</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">14</td>
-  <td class="py-4 px-4">Dr. S. Aruldass</td>
-  <td class="py-4 px-4 text-sm text-gray-600">M.Com., M.Phil., M.F.M., SET., Ph.D.</td>
-  <td class="py-4 px-4">St. Joseph's College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:aruldass_co1@mail.sjctni.edu">aruldass_co1@mail.sjctni.edu</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">15</td>
-  <td class="py-4 px-4">Dr. Michael David Premkumar</td>
-  <td class="py-4 px-4 text-sm text-gray-600">Ph.D</td>
-  <td class="py-4 px-4">Bishop Heber College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:premkumar@bhc.edu.in">premkumar@bhc.edu.in</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">16</td>
-  <td class="py-4 px-4">Mr. G. Louis Victor</td>
-  <td class="py-4 px-4 text-sm text-gray-600">M.A.(sw)., SLET</td>
-  <td class="py-4 px-4">St. Joseph's College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:gabrielvictor31@gmail.com">gabrielvictor31@gmail.com</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">17</td>
-  <td class="py-4 px-4">Dr. J. Wilfred Angello Gerald</td>
-  <td class="py-4 px-4 text-sm text-gray-600">M.A., MBA, M.Phil, NET, PGDBA, PGDMM, PGDIR, Ph.D</td>
-  <td class="py-4 px-4">St. Joseph's College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:wilfredangellogerald_hr1@mail.sjctni.edu">wilfredangellogerald_hr1@mail.sjctni.edu</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">18</td>
-  <td class="py-4 px-4">Dr. K. Maheswaran</td>
-  <td class="py-4 px-4 text-sm text-gray-600">MCA, M.Phil., M.Sc. (Maths), SET, Ph.D.</td>
-  <td class="py-4 px-4">St. Joseph's College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:profakmsjc@gmail.com">profakmsjc@gmail.com</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">19</td>
-  <td class="py-4 px-4">Dr. Gnaana Bhragasam</td>
-  <td class="py-4 px-4 text-sm text-gray-600">Retired Assistant Professor</td>
-  <td class="py-4 px-4">St. Joseph's College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:sgbhragasam@gmail.com">sgbhragasam@gmail.com</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">20</td>
-  <td class="py-4 px-4">Mr. N. Jagadeesan</td>
-  <td class="py-4 px-4 text-sm text-gray-600">Retired General Manager - BHEL</td>
-  <td class="py-4 px-4">Bharat Heavy Electricals Limited - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:gowri.j@rediffmail.com">gowri.j@rediffmail.com</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">21</td>
-  <td class="py-4 px-4">Ms. P. Janet Mary Portia</td>
-  <td class="py-4 px-4 text-sm text-gray-600">MBA, M.Phil (Mgt), NET, SET</td>
-  <td class="py-4 px-4">St. Joseph's Institute of Management - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:janet@jim.ac.in">janet@jim.ac.in</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">22</td>
-  <td class="py-4 px-4">Dr. Marie Sheila</td>
-  <td class="py-4 px-4 text-sm text-gray-600">Assistant Professor</td>
-  <td class="py-4 px-4">Holy Cross College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:sheilapaul.amara@gmail.com">sheilapaul.amara@gmail.com</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">23</td>
-  <td class="py-4 px-4">Mrs. Annie Jane</td>
-  <td class="py-4 px-4 text-sm text-gray-600">M.A., PGDBM, NET</td>
-  <td class="py-4 px-4">St. Joseph's College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:anniejane_bu2@mail.sjctni.edu">anniejane_bu2@mail.sjctni.edu</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">24</td>
-  <td class="py-4 px-4">Mr. R. Arul Joseph Raj</td>
-  <td class="py-4 px-4 text-sm text-gray-600">Assistant Professor</td>
-  <td class="py-4 px-4">St. Joseph's College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:aruljosephraj@live.com">aruljosephraj@live.com</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">25</td>
-  <td class="py-4 px-4">Ms. M. Gayathri</td>
-  <td class="py-4 px-4 text-sm text-gray-600">Assistant Professor</td>
-  <td class="py-4 px-4">Holy Cross College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:gaayathrimuruga@gmail.com">gaayathrimuruga@gmail.com</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">26</td>
-  <td class="py-4 px-4">Mr. S. Kirubakaran</td>
-  <td class="py-4 px-4 text-sm text-gray-600">M.Com., M.Phil., NET</td>
-  <td class="py-4 px-4">St. Joseph's College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:kirubakaran_co2@mail.sjctni.edu">kirubakaran_co2@mail.sjctni.edu</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">27</td>
-  <td class="py-4 px-4">Dr. A. Sahayaraj Alexander</td>
-  <td class="py-4 px-4 text-sm text-gray-600">M.COM., M.Phil., Ph.D., SET</td>
-  <td class="py-4 px-4">St. Joseph's College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:sahayarajalexander_co1@mail.sjctni.edu">sahayarajalexander_co1@mail.sjctni.edu</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">28</td>
-  <td class="py-4 px-4">Dr. Sivakumar</td>
-  <td class="py-4 px-4 text-sm text-gray-600">Associate Professor</td>
-  <td class="py-4 px-4">J.J. College of Engineering and Technology - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:tryshivhr@gmail.com">tryshivhr@gmail.com</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">29</td>
-  <td class="py-4 px-4">Dr. S. Suresh</td>
-  <td class="py-4 px-4 text-sm text-gray-600">M.B.A., M.Sc.(CS)., PGDCA., M.Phil., Ph.D.</td>
-  <td class="py-4 px-4">St. Joseph's Institute of Management - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:sureshs@jim.ac.in">sureshs@jim.ac.in</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">30</td>
-  <td class="py-4 px-4">Mr. S. Arputharaj</td>
-  <td class="py-4 px-4 text-sm text-gray-600">M.Com., M.Phil., NET</td>
-  <td class="py-4 px-4">St. Joseph's College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:arputharaj71@gmail.com">arputharaj71@gmail.com</a>, <a href="mailto:arputharaj_bu2@mail.sjctni.edu">arputharaj_bu2@mail.sjctni.edu</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">31</td>
-  <td class="py-4 px-4">Dr. S. Rahini</td>
-  <td class="py-4 px-4 text-sm text-gray-600">M.Com., MBA, M.Phil, NET, Ph.D.</td>
-  <td class="py-4 px-4">SASTRA Deemed University - Thanjavur</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:rahinionline@gmail.com">rahinionline@gmail.com</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">32</td>
-  <td class="py-4 px-4">Ms. N. Sangeetha</td>
-  <td class="py-4 px-4 text-sm text-gray-600">MBA., M.PHIL, (Ph.D)</td>
-  <td class="py-4 px-4">Bishop Heber College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:sangeethamphil24@gmail.com">sangeethamphil24@gmail.com</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">33</td>
-  <td class="py-4 px-4">Dr. A. John Balaiah</td>
-  <td class="py-4 px-4 text-sm text-gray-600">M.A. PSY (USA); M.PHIL; PH.D</td>
-  <td class="py-4 px-4">St. Joseph's College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:johnbalaiah_cp2@mail.sjctni.edu">johnbalaiah_cp2@mail.sjctni.edu</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">34</td>
-  <td class="py-4 px-4">Dr. J. Rajees</td>
-  <td class="py-4 px-4 text-sm text-gray-600">M.COM., M.Phil., NET, Ph.D.</td>
-  <td class="py-4 px-4">St. Joseph's College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:josephrajees@gmail.com">josephrajees@gmail.com</a>, <a href="mailto:rajees_cc2@mail.sjctni.edu">rajees_cc2@mail.sjctni.edu</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">35</td>
-  <td class="py-4 px-4">Dr. A. Francis Vijayakumar</td>
-  <td class="py-4 px-4 text-sm text-gray-600">M.COM, PGDFM ,MBA, Ph.D, SET</td>
-  <td class="py-4 px-4">St. Joseph's College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:francisvijayakumar_co1@mail.sjctni.edu">francisvijayakumar_co1@mail.sjctni.edu</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">36</td>
-  <td class="py-4 px-4">Mr. AL. Nagappan</td>
-  <td class="py-4 px-4 text-sm text-gray-600">Retired General Manager / Mechanical</td>
-  <td class="py-4 px-4">NLC India Limited</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:alnagappan@yahoo.co.in">alnagappan@yahoo.co.in</a>, <a href="mailto:alnagappan2013@gmail.com">alnagappan2013@gmail.com</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">37</td>
-  <td class="py-4 px-4">Dr. J. Micheal Raj</td>
-  <td class="py-4 px-4 text-sm text-gray-600">M.A(PM&IR), M.Phil, MBA, NET, Ph.D</td>
-  <td class="py-4 px-4">St. Joseph's College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:jmichaelraj1972@gmail.com">jmichaelraj1972@gmail.com</a>, <a href="mailto:michaelraj_hr1@mail.sjctni.edu">michaelraj_hr1@mail.sjctni.edu</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">38</td>
-  <td class="py-4 px-4">Dr. J. Vincent Xavier</td>
-  <td class="py-4 px-4 text-sm text-gray-600">MA., M.A (J&MC), MBA, M.Phil, B.Ed, DLL, Ph.D.</td>
-  <td class="py-4 px-4">St. Joseph's College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:vincent27@live.in">vincent27@live.in</a>, <a href="mailto:vincentxavier_bu2@mail.sjctni.edu">vincentxavier_bu2@mail.sjctni.edu</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">39</td>
-  <td class="py-4 px-4">Ms. Aurelia Bernadetta</td>
-  <td class="py-4 px-4 text-sm text-gray-600">Assistant Professor</td>
-  <td class="py-4 px-4">Bishop Heber College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:aureliabernadette@gmail.com">aureliabernadette@gmail.com</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">40</td>
-  <td class="py-4 px-4">Ms. Sarlin Venotha</td>
-  <td class="py-4 px-4 text-sm text-gray-600">Assistant Professor</td>
-  <td class="py-4 px-4">St. Joseph's College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:sarlinvenotha_co2@mail.sjctni.edu">sarlinvenotha_co2@mail.sjctni.edu</a></td>
-</tr>
-<tr class="hover:bg-gray-50 transition">
-  <td class="py-4 px-4 font-medium">41</td>
-  <td class="py-4 px-4">Dr. K. Subash</td>
-  <td class="py-4 px-4 text-sm text-gray-600">Assistant Professor</td>
-  <td class="py-4 px-4">St. Joseph's College (Autonomous) - Trichy</td>
-  <td class="py-4 px-4 text-accent hover:underline"><a href="mailto:subashkaruna94@gmail.com">subashkaruna94@gmail.com</a>, <a href="mailto:subash_cs2@mail.sjctni.edu">subash_cs2@mail.sjctni.edu</a></td>
-</tr>
-
+                <td class="py-4 px-4 font-medium">1</td>
+                <td class="py-4 px-4">Dr. S. Karthikeyan</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  M.P.T., M.Sc(Psy)., M.B.A., UGC-NET(Management), UGC-NET(HRM),
+                  Ph.D.
+                </td>
+                <td class="py-4 px-4">
+                  St. Joseph's Institute of Management - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:skarthikeyanhr@jim.ac.in"
+                    >skarthikeyanhr@jim.ac.in</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">2</td>
+                <td class="py-4 px-4">Dr. I. Jerry Richards</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  Assistant Professor
+                </td>
+                <td class="py-4 px-4">
+                  Holy Cross College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:drjerryrichardsi@gmail.com"
+                    >drjerryrichardsi@gmail.com</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">3</td>
+                <td class="py-4 px-4">Dr. R. Ganesasubramanian</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  M.A., Ph.D., SET, NET
+                </td>
+                <td class="py-4 px-4">
+                  St. Joseph's College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:ganesasubramanian_ec1@mail.sjctni.edu"
+                    >ganesasubramanian_ec1@mail.sjctni.edu</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">4</td>
+                <td class="py-4 px-4">Ms. V. Suganthi</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  Retired Assistant Professor
+                </td>
+                <td class="py-4 px-4">
+                  Seethalakshmi Ramaswami College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:sukanvenkat1958@gmail.com"
+                    >sukanvenkat1958@gmail.com</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">5</td>
+                <td class="py-4 px-4">Dr. B. Augustine Arockiaraj</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  Assistant Professor M.Com.,M.Phil.,B.Ed.,PGDCA.,NET.,Ph.D
+                </td>
+                <td class="py-4 px-4">
+                  St. Joseph's College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:augustinearockiaraj_co2@mail.sjctni.edu"
+                    >augustinearockiaraj_co2@mail.sjctni.edu</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">6</td>
+                <td class="py-4 px-4">Dr. R. Victor Lazarus</td>
+                <td class="py-4 px-4 text-sm text-gray-600">Ph.D</td>
+                <td class="py-4 px-4">
+                  Bishop Heber College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:bhcvictorlazarus@gmail.com"
+                    >bhcvictorlazarus@gmail.com</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">7</td>
+                <td class="py-4 px-4">Dr. J. Vinothkumar</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  M.Com., M.Phil., MHRM., MBA., Ph.D
+                </td>
+                <td class="py-4 px-4">
+                  St. Joseph's College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:vinothkumar_co1@mail.sjctni.edu"
+                    >vinothkumar_co1@mail.sjctni.edu</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">8</td>
+                <td class="py-4 px-4">Dr. A. Savarimuthu</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  Assistant Professor (Retired)
+                </td>
+                <td class="py-4 px-4">
+                  St. Joseph's Institute of Management - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:savarimuthu@jim.ac.in"
+                    >savarimuthu@jim.ac.in</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">9</td>
+                <td class="py-4 px-4">Dr. P. Vishnukumar</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  Assistant Professor
+                </td>
+                <td class="py-4 px-4">
+                  St. Joseph's College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:vishnu3sivam@gmail.com"
+                    >vishnu3sivam@gmail.com</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">10</td>
+                <td class="py-4 px-4">Mr. Ramanathan</td>
+                <td class="py-4 px-4 text-sm text-gray-600">Entrepreneur</td>
+                <td class="py-4 px-4">Entrepreneur</td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:mlavpm@yahoo.co.in">mlavpm@yahoo.co.in</a>,
+                  <a href="mailto:mlavpm@gmail.com">mlavpm@gmail.com</a>
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">11</td>
+                <td class="py-4 px-4">Dr. S. Najma</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  Assistant Professor
+                </td>
+                <td class="py-4 px-4">
+                  Holy Cross College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:s.najmasha@gmail.com">s.najmasha@gmail.com</a>
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">12</td>
+                <td class="py-4 px-4">Dr. Dennis Edward Fernando</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  M. Com., M.B.A., M.Phil., Ph.D.
+                </td>
+                <td class="py-4 px-4">
+                  St. Joseph's College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:dennisedwardfernando_co2@mail.sjctni.edu"
+                    >dennisedwardfernando_co2@mail.sjctni.edu</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">13</td>
+                <td class="py-4 px-4">Dr. M. Antony Jesuraja</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  M.Com., M.Phil., Ph.D., NET
+                </td>
+                <td class="py-4 px-4">
+                  St. Joseph's College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:antonyjesuraj@yahoo.com"
+                    >antonyjesuraj@yahoo.com</a
+                  >,
+                  <a href="mailto:antonyjesuraja_co1@mail.sjctni.edu"
+                    >antonyjesuraja_co1@mail.sjctni.edu</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">14</td>
+                <td class="py-4 px-4">Dr. S. Aruldass</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  M.Com., M.Phil., M.F.M., SET., Ph.D.
+                </td>
+                <td class="py-4 px-4">
+                  St. Joseph's College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:aruldass_co1@mail.sjctni.edu"
+                    >aruldass_co1@mail.sjctni.edu</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">15</td>
+                <td class="py-4 px-4">Dr. Michael David Premkumar</td>
+                <td class="py-4 px-4 text-sm text-gray-600">Ph.D</td>
+                <td class="py-4 px-4">
+                  Bishop Heber College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:premkumar@bhc.edu.in">premkumar@bhc.edu.in</a>
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">16</td>
+                <td class="py-4 px-4">Mr. G. Louis Victor</td>
+                <td class="py-4 px-4 text-sm text-gray-600">M.A.(sw)., SLET</td>
+                <td class="py-4 px-4">
+                  St. Joseph's College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:gabrielvictor31@gmail.com"
+                    >gabrielvictor31@gmail.com</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">17</td>
+                <td class="py-4 px-4">Dr. J. Wilfred Angello Gerald</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  M.A., MBA, M.Phil, NET, PGDBA, PGDMM, PGDIR, Ph.D
+                </td>
+                <td class="py-4 px-4">
+                  St. Joseph's College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:wilfredangellogerald_hr1@mail.sjctni.edu"
+                    >wilfredangellogerald_hr1@mail.sjctni.edu</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">18</td>
+                <td class="py-4 px-4">Dr. K. Maheswaran</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  MCA, M.Phil., M.Sc. (Maths), SET, Ph.D.
+                </td>
+                <td class="py-4 px-4">
+                  St. Joseph's College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:profakmsjc@gmail.com">profakmsjc@gmail.com</a>
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">19</td>
+                <td class="py-4 px-4">Dr. Gnaana Bhragasam</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  Retired Assistant Professor
+                </td>
+                <td class="py-4 px-4">
+                  St. Joseph's College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:sgbhragasam@gmail.com"
+                    >sgbhragasam@gmail.com</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">20</td>
+                <td class="py-4 px-4">Mr. N. Jagadeesan</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  Retired General Manager - BHEL
+                </td>
+                <td class="py-4 px-4">
+                  Bharat Heavy Electricals Limited - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:gowri.j@rediffmail.com"
+                    >gowri.j@rediffmail.com</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">21</td>
+                <td class="py-4 px-4">Ms. P. Janet Mary Portia</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  MBA, M.Phil (Mgt), NET, SET
+                </td>
+                <td class="py-4 px-4">
+                  St. Joseph's Institute of Management - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:janet@jim.ac.in">janet@jim.ac.in</a>
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">22</td>
+                <td class="py-4 px-4">Dr. Marie Sheila</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  Assistant Professor
+                </td>
+                <td class="py-4 px-4">
+                  Holy Cross College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:sheilapaul.amara@gmail.com"
+                    >sheilapaul.amara@gmail.com</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">23</td>
+                <td class="py-4 px-4">Mrs. Annie Jane</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  M.A., PGDBM, NET
+                </td>
+                <td class="py-4 px-4">
+                  St. Joseph's College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:anniejane_bu2@mail.sjctni.edu"
+                    >anniejane_bu2@mail.sjctni.edu</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">24</td>
+                <td class="py-4 px-4">Mr. R. Arul Joseph Raj</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  Assistant Professor
+                </td>
+                <td class="py-4 px-4">
+                  St. Joseph's College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:aruljosephraj@live.com"
+                    >aruljosephraj@live.com</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">25</td>
+                <td class="py-4 px-4">Ms. M. Gayathri</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  Assistant Professor
+                </td>
+                <td class="py-4 px-4">
+                  Holy Cross College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:gaayathrimuruga@gmail.com"
+                    >gaayathrimuruga@gmail.com</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">26</td>
+                <td class="py-4 px-4">Mr. S. Kirubakaran</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  M.Com., M.Phil., NET
+                </td>
+                <td class="py-4 px-4">
+                  St. Joseph's College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:kirubakaran_co2@mail.sjctni.edu"
+                    >kirubakaran_co2@mail.sjctni.edu</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">27</td>
+                <td class="py-4 px-4">Dr. A. Sahayaraj Alexander</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  M.COM., M.Phil., Ph.D., SET
+                </td>
+                <td class="py-4 px-4">
+                  St. Joseph's College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:sahayarajalexander_co1@mail.sjctni.edu"
+                    >sahayarajalexander_co1@mail.sjctni.edu</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">28</td>
+                <td class="py-4 px-4">Dr. Sivakumar</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  Associate Professor
+                </td>
+                <td class="py-4 px-4">
+                  J.J. College of Engineering and Technology - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:tryshivhr@gmail.com">tryshivhr@gmail.com</a>
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">29</td>
+                <td class="py-4 px-4">Dr. S. Suresh</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  M.B.A., M.Sc.(CS)., PGDCA., M.Phil., Ph.D.
+                </td>
+                <td class="py-4 px-4">
+                  St. Joseph's Institute of Management - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:sureshs@jim.ac.in">sureshs@jim.ac.in</a>
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">30</td>
+                <td class="py-4 px-4">Mr. S. Arputharaj</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  M.Com., M.Phil., NET
+                </td>
+                <td class="py-4 px-4">
+                  St. Joseph's College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:arputharaj71@gmail.com"
+                    >arputharaj71@gmail.com</a
+                  >,
+                  <a href="mailto:arputharaj_bu2@mail.sjctni.edu"
+                    >arputharaj_bu2@mail.sjctni.edu</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">31</td>
+                <td class="py-4 px-4">Dr. S. Rahini</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  M.Com., MBA, M.Phil, NET, Ph.D.
+                </td>
+                <td class="py-4 px-4">SASTRA Deemed University - Thanjavur</td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:rahinionline@gmail.com"
+                    >rahinionline@gmail.com</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">32</td>
+                <td class="py-4 px-4">Ms. N. Sangeetha</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  MBA., M.PHIL, (Ph.D)
+                </td>
+                <td class="py-4 px-4">
+                  Bishop Heber College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:sangeethamphil24@gmail.com"
+                    >sangeethamphil24@gmail.com</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">33</td>
+                <td class="py-4 px-4">Dr. A. John Balaiah</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  M.A. PSY (USA); M.PHIL; PH.D
+                </td>
+                <td class="py-4 px-4">
+                  St. Joseph's College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:johnbalaiah_cp2@mail.sjctni.edu"
+                    >johnbalaiah_cp2@mail.sjctni.edu</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">34</td>
+                <td class="py-4 px-4">Dr. J. Rajees</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  M.COM., M.Phil., NET, Ph.D.
+                </td>
+                <td class="py-4 px-4">
+                  St. Joseph's College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:josephrajees@gmail.com"
+                    >josephrajees@gmail.com</a
+                  >,
+                  <a href="mailto:rajees_cc2@mail.sjctni.edu"
+                    >rajees_cc2@mail.sjctni.edu</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">35</td>
+                <td class="py-4 px-4">Dr. A. Francis Vijayakumar</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  M.COM, PGDFM ,MBA, Ph.D, SET
+                </td>
+                <td class="py-4 px-4">
+                  St. Joseph's College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:francisvijayakumar_co1@mail.sjctni.edu"
+                    >francisvijayakumar_co1@mail.sjctni.edu</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">36</td>
+                <td class="py-4 px-4">Mr. AL. Nagappan</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  Retired General Manager / Mechanical
+                </td>
+                <td class="py-4 px-4">NLC India Limited</td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:alnagappan@yahoo.co.in"
+                    >alnagappan@yahoo.co.in</a
+                  >,
+                  <a href="mailto:alnagappan2013@gmail.com"
+                    >alnagappan2013@gmail.com</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">37</td>
+                <td class="py-4 px-4">Dr. J. Micheal Raj</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  M.A(PM&IR), M.Phil, MBA, NET, Ph.D
+                </td>
+                <td class="py-4 px-4">
+                  St. Joseph's College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:jmichaelraj1972@gmail.com"
+                    >jmichaelraj1972@gmail.com</a
+                  >,
+                  <a href="mailto:michaelraj_hr1@mail.sjctni.edu"
+                    >michaelraj_hr1@mail.sjctni.edu</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">38</td>
+                <td class="py-4 px-4">Dr. J. Vincent Xavier</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  MA., M.A (J&MC), MBA, M.Phil, B.Ed, DLL, Ph.D.
+                </td>
+                <td class="py-4 px-4">
+                  St. Joseph's College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:vincent27@live.in">vincent27@live.in</a>,
+                  <a href="mailto:vincentxavier_bu2@mail.sjctni.edu"
+                    >vincentxavier_bu2@mail.sjctni.edu</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">39</td>
+                <td class="py-4 px-4">Ms. Aurelia Bernadetta</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  Assistant Professor
+                </td>
+                <td class="py-4 px-4">
+                  Bishop Heber College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:aureliabernadette@gmail.com"
+                    >aureliabernadette@gmail.com</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">40</td>
+                <td class="py-4 px-4">Ms. Sarlin Venotha</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  Assistant Professor
+                </td>
+                <td class="py-4 px-4">
+                  St. Joseph's College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:sarlinvenotha_co2@mail.sjctni.edu"
+                    >sarlinvenotha_co2@mail.sjctni.edu</a
+                  >
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-4 font-medium">41</td>
+                <td class="py-4 px-4">Dr. K. Subash</td>
+                <td class="py-4 px-4 text-sm text-gray-600">
+                  Assistant Professor
+                </td>
+                <td class="py-4 px-4">
+                  St. Joseph's College (Autonomous) - Trichy
+                </td>
+                <td class="py-4 px-4 text-accent hover:underline">
+                  <a href="mailto:subashkaruna94@gmail.com"
+                    >subashkaruna94@gmail.com</a
+                  >,
+                  <a href="mailto:subash_cs2@mail.sjctni.edu"
+                    >subash_cs2@mail.sjctni.edu</a
+                  >
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
