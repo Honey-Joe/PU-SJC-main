@@ -26,7 +26,7 @@
     </script>
   </head>
   <body>
- <header class="bg-primary text-white shadow-md  top-0 z-[99999]">
+    <header class="bg-primary text-white shadow-md top-0 z-[99999]">
       <div
         class="flex flex-col lg:flex-row justify-evenly container mx-auto bg-primary text-white"
       >
@@ -44,7 +44,9 @@
               <h1 class="text-base xl:text-3xl text-center font-bold">
                 Society of St. Joseph's College (Autonomous)
               </h1>
-              <p class="text-yellow-400 text-center font-semibold text-xs lg:text-sm">
+              <p
+                class="text-yellow-400 text-center font-semibold text-xs lg:text-sm"
+              >
                 MBA TWINNING PROGRAMME
               </p>
             </div>
@@ -58,7 +60,9 @@
         <div
           class="hidden w-full h-fit lg:flex justify-center bg-yellow-400 text-black py-8 relative"
         >
-          <div class="absolute left-0 top-0 h-full w-10 bg-primary clip-left-cut z-10 hidden xl:block "></div>
+          <div
+            class="absolute left-0 top-0 h-full w-10 bg-primary clip-left-cut z-10 hidden xl:block"
+          ></div>
 
           <div class="flex items-center space-x-4">
             <img
@@ -80,7 +84,9 @@
             </div>
           </div>
         </div>
-        <div class="flex lg:hidden w-[90%] py-5 items-center mx-auto justify-between">
+        <div
+          class="flex lg:hidden w-[90%] py-5 items-center mx-auto justify-between"
+        >
           <div class="flex items-center space-x-4">
             <div>
               <img
@@ -91,7 +97,11 @@
             </div>
 
             <div>
-              <img src="./assets/sjc logo.png" alt="" class="h-14 w-14 object-contain" />
+              <img
+                src="./assets/sjc logo.png"
+                alt=""
+                class="h-14 w-14 object-contain"
+              />
             </div>
           </div>
 
@@ -107,7 +117,6 @@
       </div>
 
       <!-- Desktop Nav -->
-      
     </header>
     <div class="bg-primary sticky top-0 z-[9999]">
       <!-- Desktop Nav -->
@@ -196,7 +205,7 @@
             onclick="toggleMobileDropdown()"
             class="w-full text-left hover:text-accent flex justify-between items-center"
           >
-            Academics
+            About
             <svg
               id="mobile-arrow"
               class="w-4 h-4"
@@ -267,57 +276,63 @@
       </nav>
     </div>
 
-<script>
-  function toggleMobileDropdown() {
-    const dropdown = document.getElementById('mobile-academics-dropdown');
-    const arrow = document.getElementById('mobile-arrow');
-    dropdown.classList.toggle('hidden');
-    arrow.classList.toggle('transform');
-    arrow.classList.toggle('rotate-180');
-  }
-</script>
+    <script>
+      function toggleMobileDropdown() {
+        const dropdown = document.getElementById("mobile-academics-dropdown");
+        const arrow = document.getElementById("mobile-arrow");
+        dropdown.classList.toggle("hidden");
+        arrow.classList.toggle("transform");
+        arrow.classList.toggle("rotate-180");
+      }
+    </script>
     <!-- About Page Hero Section -->
     <section
       class="relative bg-gradient-to-r from-primary to-secondary text-white overflow-hidden"
     >
       <!-- Background Pattern -->
-       <div class="absolute inset-0">
-    <!-- Black overlay -->
-    <div class="absolute inset-0 bg-[#0000006e] z-[99]"></div>
+      <div class="absolute inset-0">
+        <!-- Black overlay -->
+        <div class="absolute inset-0 bg-[#0000006e] z-[99]"></div>
 
-    <!-- Carousel slides - First slide has opacity-100 by default -->
-    <div class="relative h-full w-full z-0">
-      <!-- Slide 1 (visible by default) -->
-      <div class="carousel-slide absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out">
-        <img
-          src="./assets/6219390050.jpg"
-          alt="MBA Students"
-          class="w-full h-full object-cover"
-        />
+        <!-- Carousel slides - First slide has opacity-100 by default -->
+        <div class="relative h-full w-full z-0">
+          <!-- Slide 1 (visible by default) -->
+          <div
+            class="carousel-slide absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out"
+          >
+            <img
+              src="./assets/6219390050.jpg"
+              alt="MBA Students"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <!-- Slide 2 -->
+          <div
+            class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out"
+          >
+            <img
+              src="./assets/175.jpg"
+              alt="Campus"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <!-- Slide 3 -->
+          <div
+            class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out"
+          >
+            <img
+              src="./assets/Photo6.jpg"
+              alt="Classroom"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
       </div>
 
-      <!-- Slide 2 -->
-      <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
-        <img
-          src="./assets/175.jpg"
-          alt="Campus"
-          class="w-full h-full object-cover"
-        />
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
-        <img
-          src="./assets/Photo6.jpg"
-          alt="Classroom"
-          class="w-full h-full object-cover"
-        />
-      </div>
-    </div>
-  </div>
-
-  <!-- Content container -->
-  <!-- <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center h-full relative z-[999] text-white">
+      <!-- Content container -->
+      <!-- <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center h-full relative z-[999] text-white">
     <div class="text-center text-white flex flex-col gap-3 ">
       <h1 class="text-[2rem] lg:text-[5rem] font-bold">MBA Twinning Program</h1>
       <p class=" text-xl lg:text-3xl">"Twinning to Wining Career"</p>
@@ -328,7 +343,7 @@
       </p>
     </div>
   </div> -->
-   <div class="container mx-auto px-4 py-24 md:py-32 z-[999] relative">
+      <div class="container mx-auto px-4 py-24 md:py-32 z-[999] relative">
         <div class="flex flex-col lg:flex-row items-center">
           <!-- Left Column: Content -->
           <div class="lg:w-1/2 mb-12 lg:mb-0 relative z-10">
@@ -344,7 +359,6 @@
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4">
-              
               <a
                 href="#leadership"
                 class="bg-white hover:bg-gray-100 text-primary px-8 py-3 rounded-lg font-semibold text-center transition shadow-lg"
@@ -415,61 +429,61 @@
           </div>
         </div>
       </div>
-  <!-- Carousel controls -->
-  <div class="absolute bottom-8 left-0 right-0 flex justify-center space-x-2 z-10">
-    <button
-      class="carousel-control w-3 h-3 rounded-full bg-white opacity-100 focus:outline-none"
-      data-slide="0"
-    ></button>
-    <button
-      class="carousel-control w-3 h-3 rounded-full bg-white opacity-50 focus:outline-none"
-      data-slide="1"
-    ></button>
-    <button
-      class="carousel-control w-3 h-3 rounded-full bg-white opacity-50 focus:outline-none"
-      data-slide="2"
-    ></button>
-  </div>
+      <!-- Carousel controls -->
+      <div
+        class="absolute bottom-8 left-0 right-0 flex justify-center space-x-2 z-10"
+      >
+        <button
+          class="carousel-control w-3 h-3 rounded-full bg-white opacity-100 focus:outline-none"
+          data-slide="0"
+        ></button>
+        <button
+          class="carousel-control w-3 h-3 rounded-full bg-white opacity-50 focus:outline-none"
+          data-slide="1"
+        ></button>
+        <button
+          class="carousel-control w-3 h-3 rounded-full bg-white opacity-50 focus:outline-none"
+          data-slide="2"
+        ></button>
+      </div>
 
-  <!-- Navigation arrows -->
-  <button
-    class="carousel-prev absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-black bg-opacity-50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="h-6 w-6"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        d="M15 19l-7-7 7-7"
-      />
-    </svg>
-  </button>
-  <button
-    class="carousel-next absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-black bg-opacity-50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="h-6 w-6"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        d="M9 5l7 7-7 7"
-      />
-    </svg>
-  </button>
-
-   
+      <!-- Navigation arrows -->
+      <button
+        class="carousel-prev absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-black bg-opacity-50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </button>
+      <button
+        class="carousel-next absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-black bg-opacity-50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </button>
 
       <!-- Scrolling Indicator -->
       <div
@@ -483,139 +497,173 @@
 
     <!-- About Us Section -->
     <section id="about" class="py-16 bg-gray-50">
-  <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center text-primary mb-16">
-      About the Programme
-    </h2>
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-primary mb-16">
+          About the Programme
+        </h2>
 
-    <!-- Part 1: Programme Overview -->
-    <div class="flex flex-col md:flex-row items-center gap-8 mb-20">
-      <div class="md:w-1/2">
-        <img
-          src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-          alt="Programme Overview"
-          class="rounded-lg shadow-xl w-full"
-        />
-      </div>
-      <div class="md:w-1/2">
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-2xl font-semibold text-secondary mb-4 flex items-center">
-            <span class="bg-accent text-white p-2 rounded-full mr-4">
-              <i class="fas fa-lightbulb"></i>
-            </span>
-            Programme Concept
-          </h3>
-          <p class="text-gray-700 mb-4">
-            The Twinning Programme is an innovative educational concept which widens the scope of educational opportunity and access for students. The twinning concept envisages a tie-up between Directorate of Distance Education, Pondicherry University and Society of St. Joseph's College, Tiruchirappalli.
-          </p>
-          <p class="text-gray-700 mb-4">
-            The Management programmes already offered by Pondicherry University through Distance Mode are now offered at St. Joseph's College, Tiruchirappalli. This twinning concept gives a gamut of choices to the student community to learn and assimilate the basics of the subjects through well-designed and meticulously executed academic Programmes.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Part 2: Pondicherry University -->
-    <div class="flex flex-col md:flex-row-reverse items-center gap-8 mb-20">
-      <div class="md:w-1/2">
-        <img
-          src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-          alt="Pondicherry University"
-          class="rounded-lg shadow-xl w-full"
-        />
-      </div>
-      <div class="md:w-1/2">
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-2xl font-semibold text-secondary mb-4 flex items-center">
-            <span class="bg-accent text-white p-2 rounded-full mr-4">
-              <i class="fas fa-university"></i>
-            </span>
-            Pondicherry University
-          </h3>
-          <p class="text-gray-700 mb-4">
-            Pondicherry University (PU) is an outstanding institution of higher education and is one of the Central Universities in India. Teaching, Research, Extension and Outreach are the primary functions as seen in all Central Universities.
-          </p>
-          <ul class="text-gray-700 space-y-2 pl-5">
-            <li class="flex items-start">
-              <span class="text-accent mr-2 mt-1">•</span>
-              <span>Has affiliated Colleges in Puducherry, Karaikal, Mahe, Yanam and Andaman & Nicobar Islands</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-accent mr-2 mt-1">•</span>
-              <span>Member of Association of Indian Universities and Association of Common Wealth Universities</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-accent mr-2 mt-1">•</span>
-              <span>Over 250 faculty members and 2,200 students in campus programmes</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Part 3: Institutions -->
-    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-      <h3 class="text-2xl font-semibold text-secondary p-6 pb-0 flex items-center">
-        <span class="bg-accent text-white p-2 rounded-full mr-4">
-          <i class="fas fa-landmark"></i>
-        </span>
-        The Twinning Institutions
-      </h3>
-      <div class="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200">
-        <!-- St. Joseph's -->
-        <div class="p-6">
-          <div class="flex items-center mb-4">
+        <!-- Part 1: Programme Overview -->
+        <div class="flex flex-col md:flex-row items-center gap-8 mb-20">
+          <div class="md:w-1/2">
             <img
-              src="./assets/sjc logo.png"
-              alt="St. Joseph's Logo"
-              class="h-16 mr-4"
+              src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+              alt="Programme Overview"
+              class="rounded-lg shadow-xl w-full"
             />
-            <h4 class="text-xl font-bold text-primary">
-              St. Joseph's College, Tiruchirappalli
-            </h4>
           </div>
-          <p class="text-gray-700 mb-3">
-            The host institution for MBA twinning programme, is an affiliated first grade College of Bharathidasan University. Established in 1844 by the Jesuit Fathers of Society of Jesus.
-          </p>
-          <ul class="text-sm text-gray-600 space-y-1">
-            <li>• Celebrated its sesquicentenary in 1995</li>
-            <li>• Five Stars status by NAAC in 2000</li>
-            <li>• Recognized by UGC as College with Potential for Excellence</li>
-            <li>• NAAC A++ accreditation in 2019</li>
-            <li>• Awarded Special Heritage status by UGC in 2015</li>
-            <li>• NIRF 25th Rank (2023)</li>
-            <li>• 181 Years of Educational Excellence</li>
-          </ul>
+          <div class="md:w-1/2">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3
+                class="text-2xl font-semibold text-secondary mb-4 flex items-center"
+              >
+                <span class="bg-accent text-white p-2 rounded-full mr-4">
+                  <i class="fas fa-lightbulb"></i>
+                </span>
+                Programme Concept
+              </h3>
+              <p class="text-gray-700 mb-4">
+                The Twinning Programme is an innovative educational concept
+                which widens the scope of educational opportunity and access for
+                students. The twinning concept envisages a tie-up between
+                Directorate of Distance Education, Pondicherry University and
+                Society of St. Joseph's College, Tiruchirappalli.
+              </p>
+              <p class="text-gray-700 mb-4">
+                The Management programmes already offered by Pondicherry
+                University through Distance Mode are now offered at St. Joseph's
+                College, Tiruchirappalli. This twinning concept gives a gamut of
+                choices to the student community to learn and assimilate the
+                basics of the subjects through well-designed and meticulously
+                executed academic Programmes.
+              </p>
+            </div>
+          </div>
         </div>
 
-        <!-- Pondicherry University -->
-        <div class="p-6">
-          <div class="flex items-center mb-4">
+        <!-- Part 2: Pondicherry University -->
+        <div class="flex flex-col md:flex-row-reverse items-center gap-8 mb-20">
+          <div class="md:w-1/2">
             <img
-              src="./assets/pu.png"
-              alt="Pondicherry University Logo"
-              class="h-16 mr-4"
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+              alt="Pondicherry University"
+              class="rounded-lg shadow-xl w-full"
             />
-            <h4 class="text-xl font-bold text-primary">
-              Pondicherry University
-            </h4>
           </div>
-          <p class="text-gray-700 mb-3">
-            A Central University established in 1985, recognized for research excellence in management studies.
-          </p>
-          <ul class="text-sm text-gray-600 space-y-1">
-            <li>• Institution of National Importance</li>
-            <li>• UGC Category-I University</li>
-            <li>• AISHE 5-star rating</li>
-            <li>• 300+ PhD scholars in management</li>
-            <li>• Directorate of Distance Education programmes</li>
-            <li>• 74 affiliated colleges</li>
-          </ul>
+          <div class="md:w-1/2">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3
+                class="text-2xl font-semibold text-secondary mb-4 flex items-center"
+              >
+                <span class="bg-accent text-white p-2 rounded-full mr-4">
+                  <i class="fas fa-university"></i>
+                </span>
+                Pondicherry University
+              </h3>
+              <p class="text-gray-700 mb-4">
+                Pondicherry University (PU) is an outstanding institution of
+                higher education and is one of the Central Universities in
+                India. Teaching, Research, Extension and Outreach are the
+                primary functions as seen in all Central Universities.
+              </p>
+              <ul class="text-gray-700 space-y-2 pl-5">
+                <li class="flex items-start">
+                  <span class="text-accent mr-2 mt-1">•</span>
+                  <span
+                    >Has affiliated Colleges in Puducherry, Karaikal, Mahe,
+                    Yanam and Andaman & Nicobar Islands</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span class="text-accent mr-2 mt-1">•</span>
+                  <span
+                    >Member of Association of Indian Universities and
+                    Association of Common Wealth Universities</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span class="text-accent mr-2 mt-1">•</span>
+                  <span
+                    >Over 250 faculty members and 2,200 students in campus
+                    programmes</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Part 3: Institutions -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <h3
+            class="text-2xl font-semibold text-secondary p-6 pb-0 flex items-center"
+          >
+            <span class="bg-accent text-white p-2 rounded-full mr-4">
+              <i class="fas fa-landmark"></i>
+            </span>
+            The Twinning Institutions
+          </h3>
+          <div
+            class="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200"
+          >
+            <!-- St. Joseph's -->
+            <div class="p-6">
+              <div class="flex items-center mb-4">
+                <img
+                  src="./assets/sjc logo.png"
+                  alt="St. Joseph's Logo"
+                  class="h-16 mr-4"
+                />
+                <h4 class="text-xl font-bold text-primary">
+                  St. Joseph's College, Tiruchirappalli
+                </h4>
+              </div>
+              <p class="text-gray-700 mb-3">
+                The host institution for MBA twinning programme, is an
+                affiliated first grade College of Bharathidasan University.
+                Established in 1844 by the Jesuit Fathers of Society of Jesus.
+              </p>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• Celebrated its sesquicentenary in 1995</li>
+                <li>• Five Stars status by NAAC in 2000</li>
+                <li>
+                  • Recognized by UGC as College with Potential for Excellence
+                </li>
+                <li>• NAAC A++ accreditation in 2019</li>
+                <li>• Awarded Special Heritage status by UGC in 2015</li>
+                <li>• NIRF 25th Rank (2023)</li>
+                <li>• 181 Years of Educational Excellence</li>
+              </ul>
+            </div>
+
+            <!-- Pondicherry University -->
+            <div class="p-6">
+              <div class="flex items-center mb-4">
+                <img
+                  src="./assets/pu.png"
+                  alt="Pondicherry University Logo"
+                  class="h-16 mr-4"
+                />
+                <h4 class="text-xl font-bold text-primary">
+                  Pondicherry University
+                </h4>
+              </div>
+              <p class="text-gray-700 mb-3">
+                A Central University established in 1985, recognized for
+                research excellence in management studies.
+              </p>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• Institution of National Importance</li>
+                <li>• UGC Category-I University</li>
+                <li>• AISHE 5-star rating</li>
+                <li>• 300+ PhD scholars in management</li>
+                <li>• Directorate of Distance Education programmes</li>
+                <li>• 74 affiliated colleges</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <footer class="bg-gray-800 text-white py-8">
       <div class="container mx-auto px-4">
@@ -639,12 +687,12 @@
     </footer>
   </body>
   <script src="./script.js"></script>
-   <script>
-  const menuToggle = document.getElementById("menu-toggle");
-  const mobileMenu = document.getElementById("mobile-menu");
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
 
-  menuToggle.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-  });
-</script>
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
 </html>

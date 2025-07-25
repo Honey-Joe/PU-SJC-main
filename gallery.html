@@ -10,7 +10,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css"
+    />
     <script>
       tailwind.config = {
         theme: {
@@ -26,7 +29,7 @@
     </script>
   </head>
   <body>
-  <header class="bg-primary text-white shadow-md top-0 z-[99999]">
+    <header class="bg-primary text-white shadow-md top-0 z-[99999]">
       <div
         class="flex flex-col lg:flex-row justify-evenly container mx-auto bg-primary text-white"
       >
@@ -108,10 +111,12 @@
 
       <!-- Desktop Nav -->
     </header>
-    <div class="bg-primary text-white text-center py-2 font-semibold hidden lg:block">
+    <div
+      class="bg-primary text-white text-center py-2 font-semibold hidden lg:block"
+    >
       <p>MBA TWINNING PROGRAM</p>
     </div>
-     <div class="bg-primary sticky top-0 z-[9999]">
+    <div class="bg-primary sticky top-0 z-[9999]">
       <!-- Desktop Nav -->
       <nav
         class="hidden sticky lg:flex justify-end mx-auto bg-primary w-[80%] text-white py-8 text-sm font-medium space-x-6"
@@ -198,7 +203,7 @@
             onclick="toggleMobileDropdown()"
             class="w-full text-left hover:text-accent flex justify-between items-center"
           >
-            Academics
+            About
             <svg
               id="mobile-arrow"
               class="w-4 h-4"
@@ -268,18 +273,20 @@
         <a href="result.html" class="block hover:text-accent">Results</a>
       </nav>
     </div>
+    <script>
+      function toggleMobileDropdown() {
+        const dropdown = document.getElementById("mobile-academics-dropdown");
+        const arrow = document.getElementById("mobile-arrow");
+        dropdown.classList.toggle("hidden");
+        arrow.classList.toggle("transform");
+        arrow.classList.toggle("rotate-180");
+      }
+    </script>
 
-<script>
-  function toggleMobileDropdown() {
-    const dropdown = document.getElementById('mobile-academics-dropdown');
-    const arrow = document.getElementById('mobile-arrow');
-    dropdown.classList.toggle('hidden');
-    arrow.classList.toggle('transform');
-    arrow.classList.toggle('rotate-180');
-  }
-</script>
-
-    <section id="home" class="pt-24 pb-16 relative overflow-hidden group h-[60vh]">
+    <section
+      id="home"
+      class="pt-24 pb-16 relative overflow-hidden group h-[60vh]"
+    >
       <!-- Carousel container with black overlay -->
       <div class="absolute inset-0">
         <!-- Black overlay -->
@@ -288,7 +295,9 @@
         <!-- Carousel slides - First slide has opacity-100 by default -->
         <div class="relative h-full w-full z-0">
           <!-- Slide 1 (visible by default) -->
-          <div class="carousel-slide absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out">
+          <div
+            class="carousel-slide absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out"
+          >
             <img
               src="./assets/6219390050.jpg"
               alt="MBA Students"
@@ -297,7 +306,9 @@
           </div>
 
           <!-- Slide 2 -->
-          <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+          <div
+            class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out"
+          >
             <img
               src="./assets/175.jpg"
               alt="Campus"
@@ -306,7 +317,9 @@
           </div>
 
           <!-- Slide 3 -->
-          <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+          <div
+            class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out"
+          >
             <img
               src="./assets/Photo6.jpg"
               alt="Classroom"
@@ -317,15 +330,21 @@
       </div>
 
       <!-- Content container -->
-      <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center h-full relative z-[999] text-white">
-        <div class="text-center text-white flex flex-col gap-3 ">
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center h-full relative z-[999] text-white"
+      >
+        <div class="text-center text-white flex flex-col gap-3">
           <h1 class="text-[2rem] lg:text-[5rem] font-bold">Gallery</h1>
-          <p class="text-xl lg:text-3xl">Capturing Moments, Creating Memories</p>
+          <p class="text-xl lg:text-3xl">
+            Capturing Moments, Creating Memories
+          </p>
         </div>
       </div>
 
       <!-- Carousel controls -->
-      <div class="absolute bottom-8 left-0 right-0 flex justify-center space-x-2 z-10">
+      <div
+        class="absolute bottom-8 left-0 right-0 flex justify-center space-x-2 z-10"
+      >
         <button
           class="carousel-control w-3 h-3 rounded-full bg-white opacity-100 focus:outline-none"
           data-slide="0"
@@ -347,37 +366,64 @@
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-primary mb-4">Our Gallery</h2>
           <p class="text-gray-600 max-w-2xl mx-auto">
-            Explore the vibrant life at our institution through these captivating moments.
+            Explore the vibrant life at our institution through these
+            captivating moments.
           </p>
         </div>
 
         <!-- Gallery Filter -->
         <div class="flex justify-center mb-8">
           <div class="flex flex-wrap gap-2">
-            <button class="filter-btn active px-4 py-2 rounded-full bg-primary text-white" data-filter="all">
+            <button
+              class="filter-btn active px-4 py-2 rounded-full bg-primary text-white"
+              data-filter="all"
+            >
               All
             </button>
-            <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-primary hover:text-white transition" data-filter="campus">
+            <button
+              class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-primary hover:text-white transition"
+              data-filter="campus"
+            >
               Campus
             </button>
-            <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-primary hover:text-white transition" data-filter="events">
+            <button
+              class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-primary hover:text-white transition"
+              data-filter="events"
+            >
               Events
             </button>
-            <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-primary hover:text-white transition" data-filter="classroom">
+            <button
+              class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-primary hover:text-white transition"
+              data-filter="classroom"
+            >
               Classroom
             </button>
-            <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-primary hover:text-white transition" data-filter="students">
+            <button
+              class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-primary hover:text-white transition"
+              data-filter="students"
+            >
               Students
             </button>
           </div>
         </div>
 
         <!-- Gallery Grid -->
-        <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div
+          id="gallery-grid"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+        >
           <!-- Gallery Item 1 -->
-          <a href="./assets/6219390050.jpg" class="gallery-item group events" data-sub-html="<h4>Annual Day Celebration</h4><p>Students performing at the annual day function</p>">
+          <a
+            href="./assets/6219390050.jpg"
+            class="gallery-item group events"
+            data-sub-html="<h4>Annual Day Celebration</h4><p>Students performing at the annual day function</p>"
+          >
             <div class="overflow-hidden rounded-lg shadow-lg h-full">
-              <img src="./assets/6219390050.jpg" alt="Annual Day" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+              <img
+                src="./assets/6219390050.jpg"
+                alt="Annual Day"
+                class="w-full h-64 object-cover group-hover:scale-105 transition duration-300"
+              />
               <div class="p-4 bg-white">
                 <h3 class="font-semibold text-primary">Annual Day</h3>
                 <p class="text-gray-600 text-sm">Students performance</p>
@@ -386,9 +432,17 @@
           </a>
 
           <!-- Gallery Item 2 -->
-          <a href="./assets/175.jpg" class="gallery-item group campus" data-sub-html="<h4>Campus View</h4><p>Beautiful view of our college campus</p>">
+          <a
+            href="./assets/175.jpg"
+            class="gallery-item group campus"
+            data-sub-html="<h4>Campus View</h4><p>Beautiful view of our college campus</p>"
+          >
             <div class="overflow-hidden rounded-lg shadow-lg h-full">
-              <img src="./assets/175.jpg" alt="Campus" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+              <img
+                src="./assets/175.jpg"
+                alt="Campus"
+                class="w-full h-64 object-cover group-hover:scale-105 transition duration-300"
+              />
               <div class="p-4 bg-white">
                 <h3 class="font-semibold text-primary">Campus</h3>
                 <p class="text-gray-600 text-sm">College premises</p>
@@ -397,9 +451,17 @@
           </a>
 
           <!-- Gallery Item 3 -->
-          <a href="./assets/Photo6.jpg" class="gallery-item group classroom" data-sub-html="<h4>Classroom Session</h4><p>Interactive learning in progress</p>">
+          <a
+            href="./assets/Photo6.jpg"
+            class="gallery-item group classroom"
+            data-sub-html="<h4>Classroom Session</h4><p>Interactive learning in progress</p>"
+          >
             <div class="overflow-hidden rounded-lg shadow-lg h-full">
-              <img src="./assets/Photo6.jpg" alt="Classroom" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+              <img
+                src="./assets/Photo6.jpg"
+                alt="Classroom"
+                class="w-full h-64 object-cover group-hover:scale-105 transition duration-300"
+              />
               <div class="p-4 bg-white">
                 <h3 class="font-semibold text-primary">Classroom</h3>
                 <p class="text-gray-600 text-sm">Learning session</p>
@@ -408,9 +470,17 @@
           </a>
 
           <!-- Gallery Item 4 -->
-          <a href="./assets/6219390050.jpg" class="gallery-item group students" data-sub-html="<h4>Student Group</h4><p>Our bright students during a break</p>">
+          <a
+            href="./assets/6219390050.jpg"
+            class="gallery-item group students"
+            data-sub-html="<h4>Student Group</h4><p>Our bright students during a break</p>"
+          >
             <div class="overflow-hidden rounded-lg shadow-lg h-full">
-              <img src="./assets/6219390050.jpg" alt="Students" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+              <img
+                src="./assets/6219390050.jpg"
+                alt="Students"
+                class="w-full h-64 object-cover group-hover:scale-105 transition duration-300"
+              />
               <div class="p-4 bg-white">
                 <h3 class="font-semibold text-primary">Students</h3>
                 <p class="text-gray-600 text-sm">Group photo</p>
@@ -419,9 +489,17 @@
           </a>
 
           <!-- Gallery Item 5 -->
-          <a href="./assets/175.jpg" class="gallery-item group events" data-sub-html="<h4>Seminar</h4><p>Guest lecture by industry expert</p>">
+          <a
+            href="./assets/175.jpg"
+            class="gallery-item group events"
+            data-sub-html="<h4>Seminar</h4><p>Guest lecture by industry expert</p>"
+          >
             <div class="overflow-hidden rounded-lg shadow-lg h-full">
-              <img src="./assets/175.jpg" alt="Seminar" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+              <img
+                src="./assets/175.jpg"
+                alt="Seminar"
+                class="w-full h-64 object-cover group-hover:scale-105 transition duration-300"
+              />
               <div class="p-4 bg-white">
                 <h3 class="font-semibold text-primary">Seminar</h3>
                 <p class="text-gray-600 text-sm">Guest lecture</p>
@@ -430,9 +508,17 @@
           </a>
 
           <!-- Gallery Item 6 -->
-          <a href="./assets/Photo6.jpg" class="gallery-item group campus" data-sub-html="<h4>Library</h4><p>Our well-stocked library</p>">
+          <a
+            href="./assets/Photo6.jpg"
+            class="gallery-item group campus"
+            data-sub-html="<h4>Library</h4><p>Our well-stocked library</p>"
+          >
             <div class="overflow-hidden rounded-lg shadow-lg h-full">
-              <img src="./assets/Photo6.jpg" alt="Library" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+              <img
+                src="./assets/Photo6.jpg"
+                alt="Library"
+                class="w-full h-64 object-cover group-hover:scale-105 transition duration-300"
+              />
               <div class="p-4 bg-white">
                 <h3 class="font-semibold text-primary">Library</h3>
                 <p class="text-gray-600 text-sm">Reading area</p>
@@ -441,9 +527,17 @@
           </a>
 
           <!-- Gallery Item 7 -->
-          <a href="./assets/6219390050.jpg" class="gallery-item group students" data-sub-html="<h4>Graduation</h4><p>Our proud graduates</p>">
+          <a
+            href="./assets/6219390050.jpg"
+            class="gallery-item group students"
+            data-sub-html="<h4>Graduation</h4><p>Our proud graduates</p>"
+          >
             <div class="overflow-hidden rounded-lg shadow-lg h-full">
-              <img src="./assets/6219390050.jpg" alt="Graduation" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+              <img
+                src="./assets/6219390050.jpg"
+                alt="Graduation"
+                class="w-full h-64 object-cover group-hover:scale-105 transition duration-300"
+              />
               <div class="p-4 bg-white">
                 <h3 class="font-semibold text-primary">Graduation</h3>
                 <p class="text-gray-600 text-sm">Convocation ceremony</p>
@@ -452,9 +546,17 @@
           </a>
 
           <!-- Gallery Item 8 -->
-          <a href="./assets/175.jpg" class="gallery-item group events" data-sub-html="<h4>Sports Day</h4><p>Annual sports competition</p>">
+          <a
+            href="./assets/175.jpg"
+            class="gallery-item group events"
+            data-sub-html="<h4>Sports Day</h4><p>Annual sports competition</p>"
+          >
             <div class="overflow-hidden rounded-lg shadow-lg h-full">
-              <img src="./assets/175.jpg" alt="Sports" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+              <img
+                src="./assets/175.jpg"
+                alt="Sports"
+                class="w-full h-64 object-cover group-hover:scale-105 transition duration-300"
+              />
               <div class="p-4 bg-white">
                 <h3 class="font-semibold text-primary">Sports Day</h3>
                 <p class="text-gray-600 text-sm">Annual competition</p>
@@ -465,7 +567,10 @@
 
         <!-- Load More Button -->
         <div class="text-center mt-12">
-          <button id="load-more" class="px-6 py-3 bg-primary text-white rounded-lg hover:bg-secondary transition">
+          <button
+            id="load-more"
+            class="px-6 py-3 bg-primary text-white rounded-lg hover:bg-secondary transition"
+          >
             Load More
           </button>
         </div>
@@ -502,57 +607,62 @@
     <script src="./script.js"></script>
     <script>
       // Initialize lightGallery
-      document.addEventListener('DOMContentLoaded', () => {
-        const gallery = lightGallery(document.getElementById('gallery-grid'), {
-          selector: '.gallery-item',
+      document.addEventListener("DOMContentLoaded", () => {
+        const gallery = lightGallery(document.getElementById("gallery-grid"), {
+          selector: ".gallery-item",
           download: false,
           plugins: [lgZoom, lgThumbnail, lgFullscreen],
         });
 
         // Filter functionality
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        filterButtons.forEach(button => {
-          button.addEventListener('click', () => {
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", () => {
             // Update active button
-            filterButtons.forEach(btn => btn.classList.remove('active', 'bg-primary', 'text-white'));
-            button.classList.add('active', 'bg-primary', 'text-white');
-            
-            const filterValue = button.getAttribute('data-filter');
-            const galleryItems = document.querySelectorAll('.gallery-item');
-            
-            galleryItems.forEach(item => {
-              if (filterValue === 'all' || item.classList.contains(filterValue)) {
-                item.style.display = 'block';
+            filterButtons.forEach((btn) =>
+              btn.classList.remove("active", "bg-primary", "text-white")
+            );
+            button.classList.add("active", "bg-primary", "text-white");
+
+            const filterValue = button.getAttribute("data-filter");
+            const galleryItems = document.querySelectorAll(".gallery-item");
+
+            galleryItems.forEach((item) => {
+              if (
+                filterValue === "all" ||
+                item.classList.contains(filterValue)
+              ) {
+                item.style.display = "block";
               } else {
-                item.style.display = 'none';
+                item.style.display = "none";
               }
             });
           });
         });
 
         // Load more functionality (simplified)
-        const loadMoreBtn = document.getElementById('load-more');
-        loadMoreBtn.addEventListener('click', () => {
+        const loadMoreBtn = document.getElementById("load-more");
+        loadMoreBtn.addEventListener("click", () => {
           // In a real implementation, you would fetch more items from server
-          alert('Loading more gallery items...');
+          alert("Loading more gallery items...");
         });
 
         // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuButton.addEventListener('click', () => {
-          mobileMenu.classList.toggle('hidden');
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        mobileMenuButton.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
         });
       });
     </script>
-     <script>
-  const menuToggle = document.getElementById("menu-toggle");
-  const mobileMenu = document.getElementById("mobile-menu");
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
 
-  menuToggle.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-  });
-</script>
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>

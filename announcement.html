@@ -27,7 +27,7 @@
     </script>
   </head>
   <body>
-      <header class="bg-primary text-white shadow-md top-0 z-[99999]">
+    <header class="bg-primary text-white shadow-md top-0 z-[99999]">
       <div
         class="flex flex-col lg:flex-row justify-evenly container mx-auto bg-primary text-white"
       >
@@ -109,10 +109,12 @@
 
       <!-- Desktop Nav -->
     </header>
-    <div class="bg-primary text-white text-center py-2 font-semibold hidden lg:block">
+    <div
+      class="bg-primary text-white text-center py-2 font-semibold hidden lg:block"
+    >
       <p>MBA TWINNING PROGRAM</p>
     </div>
-   <div class="bg-primary sticky top-0 z-[9999]">
+    <div class="bg-primary sticky top-0 z-[9999]">
       <!-- Desktop Nav -->
       <nav
         class="hidden sticky lg:flex justify-end mx-auto bg-primary w-[80%] text-white py-8 text-sm font-medium space-x-6"
@@ -199,7 +201,7 @@
             onclick="toggleMobileDropdown()"
             class="w-full text-left hover:text-accent flex justify-between items-center"
           >
-            Academics
+            About
             <svg
               id="mobile-arrow"
               class="w-4 h-4"
@@ -270,16 +272,19 @@
       </nav>
     </div>
 
-<script>
-  function toggleMobileDropdown() {
-    const dropdown = document.getElementById('mobile-academics-dropdown');
-    const arrow = document.getElementById('mobile-arrow');
-    dropdown.classList.toggle('hidden');
-    arrow.classList.toggle('transform');
-    arrow.classList.toggle('rotate-180');
-  }
-</script>
-    <section id="home" class="pt-24 pb-16 relative overflow-hidden group h-[60vh]">
+    <script>
+      function toggleMobileDropdown() {
+        const dropdown = document.getElementById("mobile-academics-dropdown");
+        const arrow = document.getElementById("mobile-arrow");
+        dropdown.classList.toggle("hidden");
+        arrow.classList.toggle("transform");
+        arrow.classList.toggle("rotate-180");
+      }
+    </script>
+    <section
+      id="home"
+      class="pt-24 pb-16 relative overflow-hidden group h-[60vh]"
+    >
       <!-- Carousel container with black overlay -->
       <div class="absolute inset-0">
         <!-- Black overlay -->
@@ -288,7 +293,9 @@
         <!-- Carousel slides - First slide has opacity-100 by default -->
         <div class="relative h-full w-full z-0">
           <!-- Slide 1 (visible by default) -->
-          <div class="carousel-slide absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out">
+          <div
+            class="carousel-slide absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out"
+          >
             <img
               src="./assets/6219390050.jpg"
               alt="MBA Students"
@@ -297,7 +304,9 @@
           </div>
 
           <!-- Slide 2 -->
-          <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+          <div
+            class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out"
+          >
             <img
               src="./assets/175.jpg"
               alt="Campus"
@@ -306,7 +315,9 @@
           </div>
 
           <!-- Slide 3 -->
-          <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+          <div
+            class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out"
+          >
             <img
               src="./assets/Photo6.jpg"
               alt="Classroom"
@@ -317,15 +328,19 @@
       </div>
 
       <!-- Content container -->
-      <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center h-full relative z-[999] text-white">
-        <div class="text-center text-white flex flex-col gap-3 ">
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center h-full relative z-[999] text-white"
+      >
+        <div class="text-center text-white flex flex-col gap-3">
           <h1 class="text-[2rem] lg:text-[5rem] font-bold">Announcements</h1>
           <p class="text-xl lg:text-3xl">Stay updated with the latest news</p>
         </div>
       </div>
 
       Carousel controls
-      <div class="absolute bottom-8 left-0 right-0 flex justify-center space-x-2 z-10">
+      <div
+        class="absolute bottom-8 left-0 right-0 flex justify-center space-x-2 z-10"
+      >
         <button
           class="carousel-control w-3 h-3 rounded-full bg-white opacity-100 focus:outline-none"
           data-slide="0"
@@ -345,7 +360,9 @@
     <section class="py-16 bg-white">
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-primary mb-4">Latest Announcements</h2>
+          <h2 class="text-3xl font-bold text-primary mb-4">
+            Latest Announcements
+          </h2>
           <p class="text-gray-600 max-w-2xl mx-auto">
             Important updates, notices, and news about the MBA Twinning Program
           </p>
@@ -354,19 +371,34 @@
         <!-- Announcement Filter -->
         <div class="flex justify-center mb-8">
           <div class="flex flex-wrap gap-2">
-            <button class="filter-btn active px-4 py-2 rounded-full bg-primary text-white" data-filter="all">
+            <button
+              class="filter-btn active px-4 py-2 rounded-full bg-primary text-white"
+              data-filter="all"
+            >
               All
             </button>
-            <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-primary hover:text-white transition" data-filter="admission">
+            <button
+              class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-primary hover:text-white transition"
+              data-filter="admission"
+            >
               Admissions
             </button>
-            <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-primary hover:text-white transition" data-filter="academic">
+            <button
+              class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-primary hover:text-white transition"
+              data-filter="academic"
+            >
               Academic
             </button>
-            <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-primary hover:text-white transition" data-filter="event">
+            <button
+              class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-primary hover:text-white transition"
+              data-filter="event"
+            >
               Events
             </button>
-            <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-primary hover:text-white transition" data-filter="result">
+            <button
+              class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-primary hover:text-white transition"
+              data-filter="result"
+            >
               Results
             </button>
           </div>
@@ -375,82 +407,146 @@
         <!-- Announcements Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Announcement Card 1 -->
-          <div class="announcement-card event bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-accent hover:shadow-lg transition">
+          <div
+            class="announcement-card event bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-accent hover:shadow-lg transition"
+          >
             <div class="p-6">
               <div class="flex justify-between items-start mb-2">
-                <span class="bg-accent text-white text-xs px-2 py-1 rounded">Event</span>
+                <span class="bg-accent text-white text-xs px-2 py-1 rounded"
+                  >Event</span
+                >
                 <span class="text-gray-500 text-sm">May 15, 2024</span>
               </div>
-              <h3 class="text-xl font-semibold text-primary mb-2">Orientation Program for New Batch</h3>
-              <p class="text-gray-600 mb-4">The orientation program for the 2024-25 batch will be held on June 10th at the main auditorium.</p>
-              <a href="#" class="text-accent font-medium hover:underline">Read More →</a>
+              <h3 class="text-xl font-semibold text-primary mb-2">
+                Orientation Program for New Batch
+              </h3>
+              <p class="text-gray-600 mb-4">
+                The orientation program for the 2024-25 batch will be held on
+                June 10th at the main auditorium.
+              </p>
+              <a href="#" class="text-accent font-medium hover:underline"
+                >Read More →</a
+              >
             </div>
           </div>
 
           <!-- Announcement Card 2 -->
-          <div class="announcement-card admission bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-green-500 hover:shadow-lg transition">
+          <div
+            class="announcement-card admission bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-green-500 hover:shadow-lg transition"
+          >
             <div class="p-6">
               <div class="flex justify-between items-start mb-2">
-                <span class="bg-green-500 text-white text-xs px-2 py-1 rounded">Admission</span>
+                <span class="bg-green-500 text-white text-xs px-2 py-1 rounded"
+                  >Admission</span
+                >
                 <span class="text-gray-500 text-sm">May 10, 2024</span>
               </div>
-              <h3 class="text-xl font-semibold text-primary mb-2">Last Date for Application Submission</h3>
-              <p class="text-gray-600 mb-4">The last date for submission of applications for the MBA Twinning Program has been extended to May 30th.</p>
-              <a href="#" class="text-accent font-medium hover:underline">Read More →</a>
+              <h3 class="text-xl font-semibold text-primary mb-2">
+                Last Date for Application Submission
+              </h3>
+              <p class="text-gray-600 mb-4">
+                The last date for submission of applications for the MBA
+                Twinning Program has been extended to May 30th.
+              </p>
+              <a href="#" class="text-accent font-medium hover:underline"
+                >Read More →</a
+              >
             </div>
           </div>
 
           <!-- Announcement Card 3 -->
-          <div class="announcement-card academic bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-purple-500 hover:shadow-lg transition">
+          <div
+            class="announcement-card academic bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-purple-500 hover:shadow-lg transition"
+          >
             <div class="p-6">
               <div class="flex justify-between items-start mb-2">
-                <span class="bg-purple-500 text-white text-xs px-2 py-1 rounded">Academic</span>
+                <span class="bg-purple-500 text-white text-xs px-2 py-1 rounded"
+                  >Academic</span
+                >
                 <span class="text-gray-500 text-sm">May 5, 2024</span>
               </div>
-              <h3 class="text-xl font-semibold text-primary mb-2">Semester Exam Schedule Released</h3>
-              <p class="text-gray-600 mb-4">The schedule for the upcoming semester examinations has been published on the university portal.</p>
-              <a href="#" class="text-accent font-medium hover:underline">Read More →</a>
+              <h3 class="text-xl font-semibold text-primary mb-2">
+                Semester Exam Schedule Released
+              </h3>
+              <p class="text-gray-600 mb-4">
+                The schedule for the upcoming semester examinations has been
+                published on the university portal.
+              </p>
+              <a href="#" class="text-accent font-medium hover:underline"
+                >Read More →</a
+              >
             </div>
           </div>
 
           <!-- Announcement Card 4 -->
-          <div class="announcement-card result bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-yellow-500 hover:shadow-lg transition">
+          <div
+            class="announcement-card result bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-yellow-500 hover:shadow-lg transition"
+          >
             <div class="p-6">
               <div class="flex justify-between items-start mb-2">
-                <span class="bg-yellow-500 text-white text-xs px-2 py-1 rounded">Result</span>
+                <span class="bg-yellow-500 text-white text-xs px-2 py-1 rounded"
+                  >Result</span
+                >
                 <span class="text-gray-500 text-sm">April 28, 2024</span>
               </div>
-              <h3 class="text-xl font-semibold text-primary mb-2">Previous Semester Results Declared</h3>
-              <p class="text-gray-600 mb-4">Results for the January 2024 semester examinations are now available on the student portal.</p>
-              <a href="#" class="text-accent font-medium hover:underline">Read More →</a>
+              <h3 class="text-xl font-semibold text-primary mb-2">
+                Previous Semester Results Declared
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Results for the January 2024 semester examinations are now
+                available on the student portal.
+              </p>
+              <a href="#" class="text-accent font-medium hover:underline"
+                >Read More →</a
+              >
             </div>
           </div>
 
           <!-- Announcement Card 5 -->
-          <div class="announcement-card event bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-accent hover:shadow-lg transition">
+          <div
+            class="announcement-card event bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-accent hover:shadow-lg transition"
+          >
             <div class="p-6">
               <div class="flex justify-between items-start mb-2">
-                <span class="bg-accent text-white text-xs px-2 py-1 rounded">Event</span>
+                <span class="bg-accent text-white text-xs px-2 py-1 rounded"
+                  >Event</span
+                >
                 <span class="text-gray-500 text-sm">April 20, 2024</span>
               </div>
-              <h3 class="text-xl font-semibold text-primary mb-2">Industry Interaction Program</h3>
-              <p class="text-gray-600 mb-4">A special session with industry leaders from top corporations on May 5th at 10:00 AM.</p>
-              <a href="#" class="text-accent font-medium hover:underline">Read More →</a>
+              <h3 class="text-xl font-semibold text-primary mb-2">
+                Industry Interaction Program
+              </h3>
+              <p class="text-gray-600 mb-4">
+                A special session with industry leaders from top corporations on
+                May 5th at 10:00 AM.
+              </p>
+              <a href="#" class="text-accent font-medium hover:underline"
+                >Read More →</a
+              >
             </div>
           </div>
 
-          
-
           <!-- Announcement Card 6 -->
-          <div class="announcement-card academic bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-purple-500 hover:shadow-lg transition">
+          <div
+            class="announcement-card academic bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-purple-500 hover:shadow-lg transition"
+          >
             <div class="p-6">
               <div class="flex justify-between items-start mb-2">
-                <span class="bg-purple-500 text-white text-xs px-2 py-1 rounded">Academic</span>
+                <span class="bg-purple-500 text-white text-xs px-2 py-1 rounded"
+                  >Academic</span
+                >
                 <span class="text-gray-500 text-sm">April 15, 2024</span>
               </div>
-              <h3 class="text-xl font-semibold text-primary mb-2">New Electives Added to Curriculum</h3>
-              <p class="text-gray-600 mb-4">Three new elective courses have been introduced for the upcoming semester.</p>
-              <a href="#" class="text-accent font-medium hover:underline">Read More →</a>
+              <h3 class="text-xl font-semibold text-primary mb-2">
+                New Electives Added to Curriculum
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Three new elective courses have been introduced for the upcoming
+                semester.
+              </p>
+              <a href="#" class="text-accent font-medium hover:underline"
+                >Read More →</a
+              >
             </div>
           </div>
         </div>
@@ -490,7 +586,7 @@
 
         <div class="max-w-4xl mx-auto">
           <!- Archive Year 2024 -->
-          <!-- <div class="mb-8">
+    <!-- <div class="mb-8">
             <h3 class="text-xl font-semibold text-secondary mb-4 border-b pb-2">2024</h3>
             <ul class="space-y-4">
               <li class="flex justify-between items-center py-2 border-b border-gray-200">
@@ -506,10 +602,10 @@
                 <span class="text-gray-500 text-sm">Mar 15, 2024</span>
               </li>
             </ul>
-          </div> --> 
+          </div> -->
 
-          <!-- Archive Year 2023 -->
-          <!-- <div class="mb-8">
+    <!-- Archive Year 2023 -->
+    <!-- <div class="mb-8">
             <h3 class="text-xl font-semibold text-secondary mb-4 border-b pb-2">2023</h3>
             <ul class="space-y-4">
               <li class="flex justify-between items-center py-2 border-b border-gray-200">
@@ -560,49 +656,61 @@
     <script src="./script.js"></script>
     <script>
       // Filter functionality for announcements
-      document.addEventListener('DOMContentLoaded', function() {
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const announcementCards = document.querySelectorAll('.announcement-card');
-        
-        filterButtons.forEach(button => {
-          button.addEventListener('click', () => {
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const announcementCards =
+          document.querySelectorAll(".announcement-card");
+
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", () => {
             // Update active button
-            filterButtons.forEach(btn => {
-              btn.classList.remove('active', 'bg-primary', 'text-white');
-              btn.classList.add('bg-gray-200', 'hover:bg-primary', 'hover:text-white');
+            filterButtons.forEach((btn) => {
+              btn.classList.remove("active", "bg-primary", "text-white");
+              btn.classList.add(
+                "bg-gray-200",
+                "hover:bg-primary",
+                "hover:text-white"
+              );
             });
-            button.classList.add('active', 'bg-primary', 'text-white');
-            button.classList.remove('bg-gray-200', 'hover:bg-primary', 'hover:text-white');
-            
-            const filterValue = button.getAttribute('data-filter');
-            
+            button.classList.add("active", "bg-primary", "text-white");
+            button.classList.remove(
+              "bg-gray-200",
+              "hover:bg-primary",
+              "hover:text-white"
+            );
+
+            const filterValue = button.getAttribute("data-filter");
+
             // Filter announcements
-            announcementCards.forEach(card => {
-              if (filterValue === 'all' || card.classList.contains(filterValue)) {
-                card.style.display = 'block';
+            announcementCards.forEach((card) => {
+              if (
+                filterValue === "all" ||
+                card.classList.contains(filterValue)
+              ) {
+                card.style.display = "block";
               } else {
-                card.style.display = 'none';
+                card.style.display = "none";
               }
             });
           });
         });
 
         // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuButton.addEventListener('click', () => {
-          mobileMenu.classList.toggle('hidden');
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        mobileMenuButton.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
         });
       });
     </script>
-     <script>
-  const menuToggle = document.getElementById("menu-toggle");
-  const mobileMenu = document.getElementById("mobile-menu");
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
 
-  menuToggle.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-  });
-</script>
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>

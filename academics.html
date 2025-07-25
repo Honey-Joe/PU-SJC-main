@@ -27,7 +27,7 @@
     </script>
   </head>
   <body>
- <header class="bg-primary text-white shadow-md top-0 z-[99999]">
+    <header class="bg-primary text-white shadow-md top-0 z-[99999]">
       <div
         class="flex flex-col lg:flex-row justify-evenly container mx-auto bg-primary text-white"
       >
@@ -109,10 +109,12 @@
 
       <!-- Desktop Nav -->
     </header>
-    <div class="bg-primary text-white text-center py-2 font-semibold hidden lg:block">
+    <div
+      class="bg-primary text-white text-center py-2 font-semibold hidden lg:block"
+    >
       <p>MBA TWINNING PROGRAM</p>
     </div>
-   <div class="bg-primary sticky top-0 z-[9999]">
+    <div class="bg-primary sticky top-0 z-[9999]">
       <!-- Desktop Nav -->
       <nav
         class="hidden sticky lg:flex justify-end mx-auto bg-primary w-[80%] text-white py-8 text-sm font-medium space-x-6"
@@ -199,7 +201,7 @@
             onclick="toggleMobileDropdown()"
             class="w-full text-left hover:text-accent flex justify-between items-center"
           >
-            Academics
+            About
             <svg
               id="mobile-arrow"
               class="w-4 h-4"
@@ -270,57 +272,63 @@
       </nav>
     </div>
 
-<script>
-  function toggleMobileDropdown() {
-    const dropdown = document.getElementById('mobile-academics-dropdown');
-    const arrow = document.getElementById('mobile-arrow');
-    dropdown.classList.toggle('hidden');
-    arrow.classList.toggle('transform');
-    arrow.classList.toggle('rotate-180');
-  }
-</script>
+    <script>
+      function toggleMobileDropdown() {
+        const dropdown = document.getElementById("mobile-academics-dropdown");
+        const arrow = document.getElementById("mobile-arrow");
+        dropdown.classList.toggle("hidden");
+        arrow.classList.toggle("transform");
+        arrow.classList.toggle("rotate-180");
+      }
+    </script>
     <!-- Hero Section for Academics Page -->
     <section
       class="relative bg-gradient-to-br from-primary to-secondary text-white overflow-hidden"
     >
       <!-- Decorative Elements -->
-     <div class="absolute inset-0">
-    <!-- Black overlay -->
-    <div class="absolute inset-0 bg-[#0000006e] z-[99]"></div>
+      <div class="absolute inset-0">
+        <!-- Black overlay -->
+        <div class="absolute inset-0 bg-[#0000006e] z-[99]"></div>
 
-    <!-- Carousel slides - First slide has opacity-100 by default -->
-    <div class="relative h-full w-full z-0">
-      <!-- Slide 1 (visible by default) -->
-      <div class="carousel-slide absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out">
-        <img
-          src="./assets/6219390050.jpg"
-          alt="MBA Students"
-          class="w-full h-full object-cover"
-        />
+        <!-- Carousel slides - First slide has opacity-100 by default -->
+        <div class="relative h-full w-full z-0">
+          <!-- Slide 1 (visible by default) -->
+          <div
+            class="carousel-slide absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out"
+          >
+            <img
+              src="./assets/6219390050.jpg"
+              alt="MBA Students"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <!-- Slide 2 -->
+          <div
+            class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out"
+          >
+            <img
+              src="./assets/175.jpg"
+              alt="Campus"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <!-- Slide 3 -->
+          <div
+            class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out"
+          >
+            <img
+              src="./assets/Photo6.jpg"
+              alt="Classroom"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
       </div>
 
-      <!-- Slide 2 -->
-      <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
-        <img
-          src="./assets/175.jpg"
-          alt="Campus"
-          class="w-full h-full object-cover"
-        />
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
-        <img
-          src="./assets/Photo6.jpg"
-          alt="Classroom"
-          class="w-full h-full object-cover"
-        />
-      </div>
-    </div>
-  </div>
-
-  <!-- Content container -->
-  <div class="container mx-auto px-4 py-24 md:py-32 relative z-[999]">
+      <!-- Content container -->
+      <div class="container mx-auto px-4 py-24 md:py-32 relative z-[999]">
         <div class="max-w-3xl mx-auto text-center">
           <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
             Academic <span class="text-accent">Excellence</span> with
@@ -348,61 +356,61 @@
           </div>
         </div>
       </div>
-  <!-- Carousel controls -->
-  <div class="absolute bottom-8 left-0 right-0 flex justify-center space-x-2 z-10">
-    <button
-      class="carousel-control w-3 h-3 rounded-full bg-white opacity-100 focus:outline-none"
-      data-slide="0"
-    ></button>
-    <button
-      class="carousel-control w-3 h-3 rounded-full bg-white opacity-50 focus:outline-none"
-      data-slide="1"
-    ></button>
-    <button
-      class="carousel-control w-3 h-3 rounded-full bg-white opacity-50 focus:outline-none"
-      data-slide="2"
-    ></button>
-  </div>
+      <!-- Carousel controls -->
+      <div
+        class="absolute bottom-8 left-0 right-0 flex justify-center space-x-2 z-10"
+      >
+        <button
+          class="carousel-control w-3 h-3 rounded-full bg-white opacity-100 focus:outline-none"
+          data-slide="0"
+        ></button>
+        <button
+          class="carousel-control w-3 h-3 rounded-full bg-white opacity-50 focus:outline-none"
+          data-slide="1"
+        ></button>
+        <button
+          class="carousel-control w-3 h-3 rounded-full bg-white opacity-50 focus:outline-none"
+          data-slide="2"
+        ></button>
+      </div>
 
-  <!-- Navigation arrows -->
-  <button
-    class="carousel-prev absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-black bg-opacity-50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="h-6 w-6"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        d="M15 19l-7-7 7-7"
-      />
-    </svg>
-  </button>
-  <button
-    class="carousel-next absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-black bg-opacity-50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="h-6 w-6"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        d="M9 5l7 7-7 7"
-      />
-    </svg>
-  </button>
-
-   
+      <!-- Navigation arrows -->
+      <button
+        class="carousel-prev absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-black bg-opacity-50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </button>
+      <button
+        class="carousel-next absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-black bg-opacity-50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </button>
 
       <!-- Scrolling Indicator -->
       <div
@@ -412,8 +420,6 @@
           <i class="fas fa-chevron-down text-2xl"></i>
         </a>
       </div>
-
-     
     </section>
 
     <!-- Specializations Section -->
@@ -620,126 +626,208 @@
           </p>
         </div>
 
-        <div class="bg-white rounded-xl shadow-md overflow-hidden max-w-4xl mx-auto mb-12">
-  <!-- Tab Navigation -->
-  <div class="border-b border-gray-200">
-    
-  </div>
+        <div
+          class="bg-white rounded-xl shadow-md overflow-hidden max-w-4xl mx-auto mb-12"
+        >
+          <!-- Tab Navigation -->
+          <div class="border-b border-gray-200"></div>
 
-  <!-- Tab Content Container -->
-  <div class="p-6">
-    <!-- Marketing Content -->
-    <div class="syllabus-content active" id="marketing-content">
-      <div class="space-y-4">
-        <!-- Course 1 -->
-        <div class="flex flex-col sm:flex-row justify-between  items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
-          <div class="mb-3 sm:mb-0">
-            <h4 class="font-medium text-primary">Master of Business Administration in Marketing</h4>
-          </div>
-          <div class="flex space-x-2">
-            <a href="./assets/pdfs/Syllabus2023Onwards-MBA-Marketing.pdf" download class="bg-white hover:bg-gray-100 text-primary border border-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
-              <i class="fas fa-file-pdf mr-2 text-red-500"></i> Syllabus
-            </a>
-            <a href="/pdfs/marketing-materials.zip" download class="bg-accent hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
-              <i class="fas fa-download mr-2"></i> Materials
-            </a>
+          <!-- Tab Content Container -->
+          <div class="p-6">
+            <!-- Marketing Content -->
+            <div class="syllabus-content active" id="marketing-content">
+              <div class="space-y-4">
+                <!-- Course 1 -->
+                <div
+                  class="flex flex-col sm:flex-row justify-between items-center p-4 bg-gray-50 rounded-lg border border-gray-200"
+                >
+                  <div class="mb-3 sm:mb-0">
+                    <h4 class="font-medium text-primary">
+                      Master of Business Administration in Marketing
+                    </h4>
+                  </div>
+                  <div class="flex space-x-2">
+                    <a
+                      href="./assets/pdfs/Syllabus2023Onwards-MBA-Marketing.pdf"
+                      download
+                      class="bg-white hover:bg-gray-100 text-primary border border-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition"
+                    >
+                      <i class="fas fa-file-pdf mr-2 text-red-500"></i> Syllabus
+                    </a>
+                    <a
+                      href="/pdfs/marketing-materials.zip"
+                      download
+                      class="bg-accent hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition"
+                    >
+                      <i class="fas fa-download mr-2"></i> Materials
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="flex flex-col sm:flex-row justify-between items-center p-4 bg-gray-50 rounded-lg border border-gray-200"
+                >
+                  <div class="mb-3 sm:mb-0">
+                    <h4 class="font-medium text-primary">
+                      Master of Business Administration in Finance
+                    </h4>
+                  </div>
+                  <div class="flex space-x-2">
+                    <a
+                      href="./assets/pdfs/Syllabus2023Onwards-MBA-Finance.pdf"
+                      download
+                      class="bg-white hover:bg-gray-100 text-primary border border-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition"
+                    >
+                      <i class="fas fa-file-pdf mr-2 text-red-500"></i> Syllabus
+                    </a>
+                    <a
+                      href="/pdfs/marketing-materials.zip"
+                      download
+                      class="bg-accent hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition"
+                    >
+                      <i class="fas fa-download mr-2"></i> Materials
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="flex flex-col sm:flex-row justify-between items-center p-4 bg-gray-50 rounded-lg border border-gray-200"
+                >
+                  <div class="mb-3 sm:mb-0">
+                    <h4 class="font-medium text-primary">
+                      Master of Business Administration in International
+                      Business
+                    </h4>
+                  </div>
+                  <div class="flex space-x-2">
+                    <a
+                      href="./assets/pdfs/Syllabus2023Onwards-MBA-IB.pdf"
+                      download
+                      class="bg-white hover:bg-gray-100 text-primary border border-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition"
+                    >
+                      <i class="fas fa-file-pdf mr-2 text-red-500"></i> Syllabus
+                    </a>
+                    <a
+                      href="/pdfs/marketing-materials.zip"
+                      download
+                      class="bg-accent hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition"
+                    >
+                      <i class="fas fa-download mr-2"></i> Materials
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="flex flex-col sm:flex-row justify-between items-center p-4 bg-gray-50 rounded-lg border border-gray-200"
+                >
+                  <div class="mb-3 sm:mb-0">
+                    <h4 class="font-medium text-primary">
+                      Master of Business Administration in Human Resource
+                      Management
+                    </h4>
+                  </div>
+                  <div class="flex space-x-2">
+                    <a
+                      href="./assets/pdfs/Syllabus2023Onwards-MBA-HRM.pdf"
+                      download
+                      class="bg-white hover:bg-gray-100 text-primary border border-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition"
+                    >
+                      <i class="fas fa-file-pdf mr-2 text-red-500"></i> Syllabus
+                    </a>
+                    <a
+                      href="/pdfs/marketing-materials.zip"
+                      download
+                      class="bg-accent hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition"
+                    >
+                      <i class="fas fa-download mr-2"></i> Materials
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="flex flex-col sm:flex-row justify-between items-center p-4 bg-gray-50 rounded-lg border border-gray-200"
+                >
+                  <div class="mb-3 sm:mb-0">
+                    <h4 class="font-medium text-primary">
+                      Master of Business Administration in Marketing
+                    </h4>
+                  </div>
+                  <div class="flex space-x-2">
+                    <a
+                      href="./assets/pdfs/Syllabus2023Onwards-MBA-Marketing.pdf"
+                      download
+                      class="bg-white hover:bg-gray-100 text-primary border border-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition"
+                    >
+                      <i class="fas fa-file-pdf mr-2 text-red-500"></i> Syllabus
+                    </a>
+                    <a
+                      href="/pdfs/marketing-materials.zip"
+                      download
+                      class="bg-accent hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition"
+                    >
+                      <i class="fas fa-download mr-2"></i> Materials
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="flex flex-col sm:flex-row justify-between items-center p-4 bg-gray-50 rounded-lg border border-gray-200"
+                >
+                  <div class="mb-3 sm:mb-0">
+                    <h4 class="font-medium text-primary">
+                      Master of Business Administration in General
+                    </h4>
+                  </div>
+                  <div class="flex space-x-2">
+                    <a
+                      href="./assets/pdfs/Syllabus2023Onwards-MBA-General.pdf"
+                      download
+                      class="bg-white hover:bg-gray-100 text-primary border border-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition"
+                    >
+                      <i class="fas fa-file-pdf mr-2 text-red-500"></i> Syllabus
+                    </a>
+                    <a
+                      href="/pdfs/marketing-materials.zip"
+                      download
+                      class="bg-accent hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition"
+                    >
+                      <i class="fas fa-download mr-2"></i> Materials
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="flex flex-col sm:flex-row justify-between items-center p-4 bg-gray-50 rounded-lg border border-gray-200"
+                >
+                  <div class="mb-3 sm:mb-0">
+                    <h4 class="font-medium text-primary">
+                      Master of Business Administration in Operations and Supply
+                      Chain Management
+                    </h4>
+                  </div>
+                  <div class="flex space-x-2">
+                    <a
+                      href="./assets/pdfs/Syllabus2023Onwards-MBA-OSCM.pdf"
+                      download
+                      class="bg-white hover:bg-gray-100 text-primary border border-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition"
+                    >
+                      <i class="fas fa-file-pdf mr-2 text-red-500"></i> Syllabus
+                    </a>
+                    <a
+                      href="/pdfs/marketing-materials.zip"
+                      download
+                      class="bg-accent hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition"
+                    >
+                      <i class="fas fa-download mr-2"></i> Materials
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Course 2 -->
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="flex flex-col sm:flex-row justify-between  items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
-          <div class="mb-3 sm:mb-0">
-            <h4 class="font-medium text-primary">Master of Business Administration in Finance</h4>
-          </div>
-          <div class="flex space-x-2">
-            <a href="./assets/pdfs/Syllabus2023Onwards-MBA-Finance.pdf" download class="bg-white hover:bg-gray-100 text-primary border border-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
-              <i class="fas fa-file-pdf mr-2 text-red-500"></i> Syllabus
-            </a>
-            <a href="/pdfs/marketing-materials.zip" download class="bg-accent hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
-              <i class="fas fa-download mr-2"></i> Materials
-            </a>
-          </div>
-        </div>
-
-        <div class="flex flex-col sm:flex-row justify-between  items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
-          <div class="mb-3 sm:mb-0">
-            <h4 class="font-medium text-primary">Master of Business Administration in International Business</h4>
-          </div>
-          <div class="flex space-x-2">
-            <a href="./assets/pdfs/Syllabus2023Onwards-MBA-IB.pdf" download class="bg-white hover:bg-gray-100 text-primary border border-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
-              <i class="fas fa-file-pdf mr-2 text-red-500"></i> Syllabus
-            </a>
-            <a href="/pdfs/marketing-materials.zip" download class="bg-accent hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
-              <i class="fas fa-download mr-2"></i> Materials
-            </a>
-          </div>
-        </div>
-
-        <div class="flex flex-col sm:flex-row justify-between  items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
-          <div class="mb-3 sm:mb-0">
-            <h4 class="font-medium text-primary">Master of Business Administration in Human Resource Management</h4>
-          </div>
-          <div class="flex space-x-2">
-            <a href="./assets/pdfs/Syllabus2023Onwards-MBA-HRM.pdf" download class="bg-white hover:bg-gray-100 text-primary border border-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
-              <i class="fas fa-file-pdf mr-2 text-red-500"></i> Syllabus
-            </a>
-            <a href="/pdfs/marketing-materials.zip" download class="bg-accent hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
-              <i class="fas fa-download mr-2"></i> Materials
-            </a>
-          </div>
-        </div>
-
-        <div class="flex flex-col sm:flex-row justify-between  items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
-          <div class="mb-3 sm:mb-0">
-            <h4 class="font-medium text-primary">Master of Business Administration in Marketing</h4>
-          </div>
-          <div class="flex space-x-2">
-            <a href="./assets/pdfs/Syllabus2023Onwards-MBA-Marketing.pdf" download class="bg-white hover:bg-gray-100 text-primary border border-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
-              <i class="fas fa-file-pdf mr-2 text-red-500"></i> Syllabus
-            </a>
-            <a href="/pdfs/marketing-materials.zip" download class="bg-accent hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
-              <i class="fas fa-download mr-2"></i> Materials
-            </a>
-          </div>
-        </div>
-
-
-        <div class="flex flex-col sm:flex-row justify-between  items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
-          <div class="mb-3 sm:mb-0">
-            <h4 class="font-medium text-primary">Master of Business Administration in General   </h4>
-          </div>
-          <div class="flex space-x-2">
-            <a href="./assets/pdfs/Syllabus2023Onwards-MBA-General.pdf" download class="bg-white hover:bg-gray-100 text-primary border border-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
-              <i class="fas fa-file-pdf mr-2 text-red-500"></i> Syllabus
-            </a>
-            <a href="/pdfs/marketing-materials.zip" download class="bg-accent hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
-              <i class="fas fa-download mr-2"></i> Materials
-            </a>
-          </div>
-        </div>
-
-         <div class="flex flex-col sm:flex-row justify-between  items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
-          <div class="mb-3 sm:mb-0">
-            <h4 class="font-medium text-primary">Master of Business Administration in Operations and Supply Chain Management </h4>
-          </div>
-          <div class="flex space-x-2">
-            <a href="./assets/pdfs/Syllabus2023Onwards-MBA-OSCM.pdf" download class="bg-white hover:bg-gray-100 text-primary border border-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
-              <i class="fas fa-file-pdf mr-2 text-red-500"></i> Syllabus
-            </a>
-            <a href="/pdfs/marketing-materials.zip" download class="bg-accent hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center transition">
-              <i class="fas fa-download mr-2"></i> Materials
-            </a>
-          </div>
-        </div>
-        
-        <!-- Course 2 -->
-        
-      </div>
-    </div>
-
-   
-  </div>
-</div>
-
 
         <!-- Materials Library -->
         <div
@@ -855,12 +943,12 @@
     </footer>
   </body>
   <script src="./script.js"></script>
-   <script>
-  const menuToggle = document.getElementById("menu-toggle");
-  const mobileMenu = document.getElementById("mobile-menu");
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
 
-  menuToggle.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-  });
-</script>
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
 </html>
